@@ -1,0 +1,171 @@
+.inputGroup {
+  position: relative;
+  font-size: 0.875rem;
+  margin-bottom: 10px;
+
+  &.error {
+    // color: #F05454;
+  }
+
+  &.error input {
+    border: 1px solid #f05454;
+  }
+
+  .errorText {
+    margin-top: 4px;
+    font-size: 0.625rem;
+    display: none;
+  }
+
+  &.error .errorText {
+    display: block;
+    color: var(--error-color);
+  }
+
+  label {
+    display: block;
+    font-weight: var(--bold-text);
+    line-height: 15px;
+    margin-bottom: 3px;
+
+    span {
+      display: inline-block;
+      margin-bottom: 3px;
+    }
+
+    // forms in the mobile menu
+    @media screen and (max-width: 480px) {
+      font-size: 0.75rem;
+    }
+  }
+
+  input {
+    width: 100%;
+    border: 1px solid var(--line-stroke);
+    line-height: 16px;
+    font-size: 0.75rem;
+    padding: 11px 10px;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.2s ease;
+    &:hover {
+      border: 1px solid var(--extra-text);
+    }
+    &:focus-visible {
+      outline: none;
+      border: 1px solid var(--hover-elements);
+    }
+
+    &::placeholder {
+      color: rgba(54, 55, 60, 0.4) !important;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    input {
+      height: 48px;
+    }
+  }
+}
+
+.inputGroup.password {
+  input {
+    padding-right: 31px;
+    position: relative;
+  }
+
+  .inputWrapper {
+    position: relative;
+  }
+
+  .passwordEye {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 10px;
+    height: 40px;
+    line-height: 0;
+    cursor: pointer;
+
+    img {
+      width: 16px;
+    }
+
+    @media screen and (max-width: 480px) {
+      height: 48px;
+    }
+  }
+
+  &.open .passwordEye img {
+    content: url("/auth/eye-open.svg");
+  }
+
+  &.close .passwordEye img {
+    content: url("/auth/eye-close.svg");
+  }
+}
+
+.checkbox {
+  font-size: 0.75rem;
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+
+  label {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: var(--lightgray-color);
+      width: 20px;
+      height: 20px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    &.blue:before {
+      background: #fff;
+      background: url("/auth/checkbox-empty.svg") center center no-repeat;
+      background-size: cover;
+    }
+
+    &.bw:before {
+      background: #fff;
+      background: url("/auth/checkbox-bw-empty.svg") center center no-repeat;
+      background-size: cover;
+    }
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"].checked + label:before {
+    background-size: cover;
+  }
+
+  // variants: gray, blue, bw
+  input[type="checkbox"].gray.checked + label:before {
+    background: url("/auth/checkbox-gray.svg") center center no-repeat;
+    background-size: cover;
+  }
+
+  input[type="checkbox"].blue.checked + label:before {
+    background: url("/auth/checkbox-blue.svg") center center no-repeat;
+    background-size: cover;
+  }
+
+  input[type="checkbox"].bw.checked + label:before {
+    background: url("/auth/checkbox-bw.svg") center center no-repeat;
+    background-size: cover;
+  }
+}

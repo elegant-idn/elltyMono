@@ -1,0 +1,115 @@
+// FILTER ACCORDION
+// touch-action: manipulation;
+
+.accordion * {
+  // transition: height 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.accordion:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.accordion:last-child {
+  margin-bottom: 20px;
+}
+
+.accordionTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px !important;
+  cursor: pointer;
+
+  // &:hover {
+  //   background: #f6f6f6;
+  // }
+}
+
+.accordion.active .accordionTitle {
+  background: #f6f6f6;
+  margin-bottom: 12px;
+}
+
+.accordionTitle svg {
+  transform: rotate(90deg);
+  width: 10px;
+  height: 10px;
+  fill: none;
+  stroke: black;
+}
+
+.accordion.active .accordionTitle svg {
+  transform: rotate(-90deg);
+}
+
+.accordionDetails:first-child {
+  margin-top: 12px;
+}
+
+.accordionItem {
+  display: flex;
+  align-items: center;
+  padding: 8px 0 8px 10px;
+  margin-bottom: 4px;
+  font-size: 0.875rem;
+  color: #36373c;
+  cursor: pointer;
+
+  &.active,
+  &:hover {
+    color: var(--black-color);
+    font-weight: var(--bold-text);
+  }
+
+  svg {
+    width: 17px;
+    height: 17px;
+    margin-right: 8px;
+    fill: #e1e5ed;
+  }
+
+  &.active svg,
+  &:hover svg {
+    fill: var(--gray-color);
+  }
+
+  svg.logo,
+  svg.planner {
+    fill: none;
+    stroke: #e1e5ed;
+  }
+
+  &.active,
+  &:hover {
+    svg.logo,
+    svg.planner {
+      fill: none;
+      stroke: var(--gray-color);
+    }
+  }
+
+  svg.etsy,
+  svg.etsy {
+    fill: #e1e5ed;
+    stroke: #e1e5ed;
+  }
+
+  &.active svg.etsy,
+  &:hover svg.etsy {
+    fill: var(--gray-color);
+    stroke: var(--gray-color);
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .accordionTitle {
+    font-size: 0.875rem;
+  }
+
+  .accordionItem {
+    font-size: 0.75rem;
+  }
+}

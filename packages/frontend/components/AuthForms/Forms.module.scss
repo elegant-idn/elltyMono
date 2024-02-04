@@ -1,0 +1,105 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-color);
+
+  .formError {
+    font-size: 0.75rem;
+    font-weight: var(--bold-text);
+    color: var(--attention-color);
+    margin-bottom: 10px;
+  }
+
+  .policy {
+    font-size: 0.75rem;
+    margin-bottom: 20px;
+
+    a {
+      font-size: 0.75rem;
+      font-weight: normal;
+    }
+  }
+}
+
+.menu {
+  height: 100%;
+
+  &.passwordResetForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .form {
+      margin-top: 0;
+    }
+  }
+
+  .form {
+    margin-top: 24px;
+    .formTitle {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .formSubtitle {
+      font-size: 0.75rem;
+      text-align: center;
+    }
+
+    .checkSvg {
+      width: 100px;
+    }
+
+    .bottom {
+      margin-bottom: 24px;
+
+      .submitBtn {
+        margin-top: 14px;
+
+        button {
+          font-size: 1rem;
+        }
+      }
+
+      .bottomLink {
+        font-size: 0.75rem;
+
+        span {
+          font-size: 0.75rem;
+
+          &.disabled {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 375px) {
+      .formTitle {
+        font-size: 1rem;
+      }
+
+      .formSubtitle {
+        font-size: 0.625rem;
+      }
+
+      .checkSvg {
+        width: 80px;
+      }
+
+      .bottom {
+        .submitBtn button {
+          font-size: 0.875rem;
+        }
+
+        .bottomLink {
+          font-size: 0.625rem;
+
+          span {
+            font-size: 0.625rem;
+          }
+        }
+      }
+    }
+  }
+}

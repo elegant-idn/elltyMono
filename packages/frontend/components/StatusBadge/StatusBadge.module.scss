@@ -1,0 +1,15 @@
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 23px;
+  background-color: var(--lightgray-color);
+  border-radius: 20px;
+
+  span {
+    position: relative;
+    bottom: 1px;
+    font-size: 0.75rem;
+  }
+}

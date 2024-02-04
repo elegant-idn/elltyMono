@@ -1,0 +1,22 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  @media screen and (max-width: 768px) {
+    .content {
+      padding-top: 64px;
+    }
+  }
+
+  .centerContent {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .centerContent {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.bottomActions {
+  position: fixed;
+  bottom: 0;
+
+  border-top: 1px solid #eee;
+  background-color: #fff;
+  height: var(--bottom-dashboard-menu-height);
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    flex: 1 1;
+    font-size: 14px;
+  }
+
+  .deleteContainer {
+    flex: 1 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .clearContainer {
+    flex: 1 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  button {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: #f6f6f6;
+    }
+
+    &:active {
+      background-color: #eee;
+    }
+  }
+}

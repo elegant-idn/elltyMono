@@ -1,0 +1,264 @@
+.root {
+  .blockTitle {
+    font-weight: var(--bold-text);
+    font-size: 1.5rem;
+    line-height: 29px;
+    margin-bottom: 20px;
+  }
+
+  .blockSubtitle {
+    font-size: 1rem;
+    font-weight: var(--bold-text);
+    margin-bottom: 20px;
+  }
+
+  .addBtn {
+    margin-bottom: 20px;
+
+    button {
+      width: 160px;
+    }
+  }
+
+  .saveElemErrorText {
+    font-size: 0.875rem;
+    color: #f05454;
+    margin-bottom: 20px;
+  }
+
+  .wrapper {
+    display: flex;
+    gap: 30px;
+  }
+
+  .form {
+    .inputGroup {
+      margin-bottom: 20px;
+
+      > label {
+        display: block;
+        font-size: 0.875rem;
+        font-weight: var(--bold-text);
+        margin-bottom: 8px;
+      }
+
+      > input {
+        height: 40px;
+        width: 400px;
+        padding: 11px;
+        font-size: 0.875rem;
+        border-radius: 4px;
+        border: 1px solid #e1e5ed;
+
+        &:focus-visible {
+          outline: none;
+          border: 1px solid var(--blue-color);
+        }
+      }
+
+      .select {
+        width: 400px;
+      }
+    }
+
+    .typeCheckboxWrapper {
+      display: flex;
+      align-items: center;
+
+      span {
+        font-size: 0.875rem;
+        margin-right: 8px;
+      }
+
+      > div {
+        height: 27px;
+        line-height: 27px;
+      }
+
+      label {
+        margin-right: 20px;
+        padding-left: 27px !important;
+
+        &:before {
+          width: 27px;
+          height: 27px;
+        }
+      }
+    }
+
+    .btnWrap {
+      display: flex;
+      gap: 20px;
+
+      button {
+        width: 100px;
+      }
+    }
+  }
+
+  .imagePreview {
+    flex: 1;
+    flex-shrink: 0;
+    max-width: 500px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.uploadFileGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-size: 0.875rem;
+
+  .labelText {
+    font-weight: var(--bold-text);
+    margin-bottom: 8px;
+  }
+
+  .uploadGroup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .fileName {
+      // line-height: 40px;
+      color: var(--gray-color);
+      opacity: 0.6;
+      width: 170px;
+    }
+
+    label,
+    button {
+      width: 130px;
+      height: 40px;
+      color: #000;
+    }
+
+    label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // height: 40px;
+      background: var(--lightgray-color);
+      border-radius: 4px;
+      /* Style as you please, it will become the visible UI component. */
+      cursor: pointer;
+    }
+
+    input {
+      opacity: 0;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+}
+
+// FILTER PALETTE
+.palette {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .paletteColor {
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    &.active svg {
+      display: block;
+    }
+
+    /* check sign */
+    svg {
+      width: 13px;
+      height: 10px;
+      display: none;
+      fill: #f6f6f6;
+    }
+
+    &:last-child {
+      background-color: #ffffff;
+      border: 1px solid #e1e5ed;
+
+      svg {
+        fill: black;
+      }
+    }
+  }
+}
+
+.pagination {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > div {
+    cursor: pointer;
+  }
+
+  .paginationArrow {
+    padding: 0 10px;
+
+    svg {
+      width: 6px;
+      height: 10px;
+      fill: none;
+      stroke: #36373c;
+    }
+
+    &.disabled svg {
+      opacity: 0.2;
+    }
+
+    &.right {
+      transform: rotate(180deg);
+    }
+  }
+
+  .paginationItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+
+    &.active {
+      background: #f6f6f6;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .paginationArrow {
+      padding: 0 8px;
+    }
+
+    .paginationItem:nth-child(5),
+    .paginationItem:nth-child(6) {
+      // display: none;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .paginationItem {
+      font-size: 0.75rem;
+    }
+  }
+}

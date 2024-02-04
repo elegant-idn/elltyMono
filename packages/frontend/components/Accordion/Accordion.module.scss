@@ -1,0 +1,76 @@
+// ACCORDION COMPONENT
+
+.accordion {
+  padding: 16px 20px;
+  cursor: pointer;
+
+  border: 1px solid var(--lightgray-color);
+  border-radius: 4px;
+  // webkit-tap-highlight-color: transparent;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &:hover {
+    background-color: var(--lightgray-color);
+    border: 1px solid var(--lightgray-color);
+  }
+
+  .accordionTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: var(--bold-text);
+    color: var(--black-color);
+    line-height: 20px;
+    padding: 0;
+
+    svg {
+      transform: rotate(90deg);
+      width: 10px;
+      height: 10px;
+      fill: none;
+      stroke: var(--black-color);
+    }
+  }
+
+  .accordionDetails {
+    margin-bottom: 2px;
+    margin-top: 9px;
+    color: var(--gray-color);
+    font-size: 0.875rem;
+  }
+
+  @media screen and (max-width: 1440px) {
+    .accordionTitle {
+      font-size: 0.875rem;
+    }
+
+    .accordionDetails {
+      font-size: 0.75rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .accordionTitle {
+      font-size: 1rem;
+    }
+
+    .accordionDetails {
+      font-size: 0.875rem;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .accordionTitle {
+      font-size: 0.875rem;
+    }
+
+    .accordionDetails {
+      font-size: 0.75rem;
+    }
+  }
+}

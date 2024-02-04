@@ -1,0 +1,42 @@
+.root {
+  position: relative;
+  right: 20px;
+  font-size: 0.875rem;
+  padding: 15px 15px;
+  width: 300px;
+  background-color: #fff;
+
+  .text {
+    display: inline-block;
+    margin-bottom: 9px;
+  }
+
+  .select {
+    margin-bottom: 18px;
+  }
+
+  .slider {
+    margin-bottom: 10px;
+
+    .sizeRow {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .disabled {
+        opacity: 0.4;
+      }
+    }
+  }
+
+  .downloadBtnPopper {
+    button {
+      width: 100%;
+      font-size: 0.875rem;
+    }
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    right: 0;
+  }
+}

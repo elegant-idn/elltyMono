@@ -1,0 +1,51 @@
+.root {
+  .blockFreePlan {
+    > p {
+      margin: 26px 0;
+    }
+  }
+  .btnWrapper {
+    width: 220px;
+  }
+  .blockTitle {
+    font-weight: var(--bold-text);
+    font-size: 1.5rem;
+    line-height: 29px;
+    margin-bottom: 25px;
+  }
+  label {
+    display: block;
+    font-size: 14px;
+    margin-right: 10px;
+    font-weight: var(--bold-text);
+  }
+  .linkBackWrapper {
+    display: none;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  .HistoryWrapper {
+    margin-top: 25px;
+    .HolderHistory {
+      margin-top: 16px;
+      .flexWrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10%;
+        flex-wrap: wrap;
+      }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .blockTitle {
+      display: none;
+    }
+
+    .linkBackWrapper {
+      display: flex;
+    }
+    .btnWrapper {
+      width: 100%;
+    }
+  }
+}

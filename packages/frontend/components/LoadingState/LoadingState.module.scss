@@ -1,0 +1,13 @@
+.loadingContainer {
+  position: relative;
+
+  &.isLoading {
+    &::after {
+      position: absolute;
+      inset: 0px;
+      content: "``";
+      background-color: #fff;
+      opacity: 0.5;
+    }
+  }
+}

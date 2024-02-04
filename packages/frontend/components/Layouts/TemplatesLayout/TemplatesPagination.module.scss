@@ -1,0 +1,60 @@
+// PAGINATION
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > div {
+    cursor: pointer;
+  }
+
+  .paginationArrow {
+    padding: 0 10px;
+
+    svg {
+      width: 6px;
+      height: 10px;
+      fill: none;
+      stroke: #36373c;
+    }
+
+    &.disabled svg {
+      opacity: 0.2;
+    }
+
+    &.right {
+      transform: rotate(180deg);
+    }
+  }
+
+  .paginationItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+
+    &.active {
+      background: #f6f6f6;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .paginationArrow {
+      padding: 0 8px;
+    }
+
+    .paginationItem:nth-child(5),
+    .paginationItem:nth-child(6) {
+      // display: none;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .paginationItem {
+      font-size: 0.75rem;
+    }
+  }
+}

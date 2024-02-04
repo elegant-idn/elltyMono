@@ -1,0 +1,91 @@
+.root {
+  --root-background-color: transparent;
+  --default-mark-color: #e3e3e3;
+  --active-outline-color: rgba(36, 105, 246, 0.1);
+  --active-not-checked-mark-color: #878787;
+  --checked-mark-color: #fff;
+  --checked-background-color: #2469f6;
+  --hover-checked-background-color: rgba(36, 105, 246, 0.8);
+  --root-border-color: var(--line-stroke);
+  --root-hover-border-color: #bdbdbd;
+  &.dark {
+    --root-background-color: rgba(54, 55, 60, 0.7);
+    --default-mark-color: rgba(246, 246, 246, 0.4);
+    --active-outline-color: rgba(246, 246, 246, 0.2);
+    --active-not-checked-mark-color: rgba(246, 246, 246, 0.6);
+    --checked-mark-color: #fff;
+    --checked-background-color: #2469f6;
+    --hover-checked-background-color: #0759ab;
+    --root-border-color: rgba(246, 246, 246, 0.4);
+    --root-hover-border-color: rgba(246, 246, 246, 0.6);
+  }
+
+  position: relative;
+
+  background-color: var(--root-background-color);
+  border-radius: 4px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--root-border-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  .input {
+    display: none;
+  }
+
+  .mark {
+    opacity: 0;
+    stroke: var(--default-mark-color);
+  }
+
+  &:hover {
+    border-color: var(--root-hover-border-color);
+  }
+
+  &:hover,
+  &.checked,
+  &:active {
+    .mark {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    // rounded outline is not supported on safari
+    &::before {
+      position: absolute;
+      content: "";
+      inset: -4px;
+      border: 3px solid var(--active-outline-color);
+      border-radius: 7px;
+    }
+
+    &:not(.checked) .mark {
+      stroke: var(--active-not-checked-mark-color);
+    }
+  }
+
+  &.checked {
+    .mark {
+      stroke: var(--checked-mark-color);
+    }
+  }
+
+  &.checked {
+    background-color: var(--checked-background-color);
+    border-color: transparent;
+
+    &:hover {
+      background-color: var(--hover-checked-background-color);
+    }
+
+    &:active {
+      background-color: var(--checked-background-color);
+    }
+  }
+}

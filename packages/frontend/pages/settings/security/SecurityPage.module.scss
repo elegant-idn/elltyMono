@@ -1,0 +1,173 @@
+.root {
+  font-size: 0.875rem;
+  width: 450px;
+  button {
+    font-weight: 500;
+  }
+  .modalWrapper {
+    padding: 27px 25px 10px 25px;
+  }
+  .underText {
+    width: 100vw;
+    padding: 17px 0px;
+  }
+  .deleteInput {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid var(--line-stroke);
+    border-radius: 4px;
+    &:hover {
+      border: 1px solid var(--extra-text);
+    }
+    &:focus {
+      outline: none;
+      border: 1px solid var(--hover-elements);
+    }
+  }
+  .closeBtn {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url("/close1.svg");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    z-index: 9999;
+    transition: 0.2s ease;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+  .title {
+    font-weight: var(--bold-text);
+    margin-bottom: 25px;
+    line-height: 17px;
+    font-size: 14px;
+  }
+
+  .text {
+    margin-bottom: 25px;
+    line-height: 1.3;
+  }
+
+  .btnWrap {
+    display: flex;
+    gap: 10px;
+
+    button {
+      flex: 1;
+    }
+  }
+  .btnGroup {
+    display: flex;
+    justify-content: space-around;
+    > button {
+      // submit btn
+      width: 160px;
+    }
+  }
+  .inputError {
+    color: var(--error-color);
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+  }
+  .warningWrapper {
+    margin-top: 24px;
+    button {
+      width: auto;
+      padding: 0 20px;
+    }
+  }
+  .blockTitle {
+    font-weight: var(--bold-text);
+    font-size: var(--xl_2);
+    line-height: 29px;
+    margin-bottom: 25px;
+  }
+  button {
+    // submit btn
+    width: 137px;
+    margin-bottom: 20px;
+  }
+
+  .formError {
+    color: var(--error-color);
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    font-weight: var(--bold-text);
+    margin-bottom: 8px;
+  }
+  .btnWrapper {
+    > button {
+      width: max-content;
+      padding: 0 20px;
+    }
+  }
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 400px;
+
+    > input {
+      height: 40px;
+      width: 100%;
+      padding: 11px;
+      border-radius: 4px;
+      border: 1px solid var(--line-stroke);
+
+      &:focus-visible {
+        outline: none;
+        background-color: var(--hover-color);
+        border: 1px solid var(--hover-color);
+      }
+    }
+
+    .select {
+      width: 400px;
+    }
+  }
+
+  .linkBackWrapper {
+    display: none;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    .blockTitle {
+      display: none;
+    }
+    .underText {
+      width: 100%;
+    }
+    .closeBtn {
+      padding: 5px;
+      right: 0px;
+      filter: invert(1);
+    }
+    .linkBackWrapper {
+      display: flex;
+    }
+    .inputGroup {
+      width: 100%;
+      input {
+        height: 48px;
+      }
+    }
+  }
+}

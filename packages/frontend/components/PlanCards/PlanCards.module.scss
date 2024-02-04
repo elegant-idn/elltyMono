@@ -1,0 +1,113 @@
+.card {
+  min-width: 350px;
+  box-shadow: 2px 4px 12px rgba(161, 165, 176, 0.08);
+  border-radius: 4px;
+  border: 1px solid #e1e5ed;
+  padding: 32px;
+
+  &:hover {
+    border: 1px solid var(--beige-color);
+    background-color: var(--beige-color);
+  }
+
+  .cardName {
+    font-weight: var(--bold-text);
+    margin-bottom: 15px;
+  }
+
+  .cardPrice {
+    display: flex;
+    align-items: center;
+    font-weight: var(--bold-text);
+    font-size: 2.25rem;
+    line-height: 43px;
+    margin-bottom: 15px;
+  }
+
+  .cardDuration {
+    position: relative;
+    white-space: nowrap;
+    top: 1px;
+    font-size: 0.875rem;
+    color: var(--gray-color);
+    opacity: 0.4;
+    margin-left: 6px;
+  }
+
+  .cardText {
+    font-size: 0.875rem;
+    max-width: 300px;
+    color: var(--gray-color);
+    margin-bottom: 10px;
+  }
+
+  // BtnPrimary
+  button {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .adv {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    max-width: 300px;
+
+    svg {
+      flex-shrink: 0;
+      width: 16px;
+      height: 16px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  @media screen and (max-width: 1440px) {
+    min-width: 314px;
+
+    .cardText {
+      font-size: 0.75rem;
+    }
+
+    .adv {
+      font-size: 0.75rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    min-width: 350px;
+
+    .cardPrice {
+      margin-bottom: 16px;
+    }
+
+    // BtnPrimary
+    button {
+      margin-bottom: 24px;
+    }
+
+    .cardText {
+      font-size: 0.875rem;
+      margin-bottom: 8px;
+    }
+
+    .adv {
+      font-size: 0.875rem;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 100%;
+
+    .cardText {
+      font-size: 0.75rem;
+    }
+
+    .adv {
+      font-size: 0.75rem;
+    }
+  }
+}

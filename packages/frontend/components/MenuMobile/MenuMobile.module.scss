@@ -1,0 +1,290 @@
+.mobileMenuDivider {
+  height: 1px;
+  background-color: #eee;
+}
+
+.langInnerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.upgradeToPro {
+  margin-top: auto;
+}
+
+.langInnerItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuMobile {
+  display: none;
+  font-size: 1rem;
+
+  .mobileMenuList {
+    padding-top: 8px;
+  }
+
+  .mobileMenuListItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    height: 50px;
+    width: 100%;
+    text-align: left;
+
+    &:active {
+      background-color: #eee;
+    }
+
+    svg {
+      position: relative;
+      top: 1px;
+      width: 8px;
+      height: 13px;
+      fill: none;
+      stroke: var(--black-color);
+    }
+  }
+
+  .authBtn {
+    button {
+      font-size: 0.875rem;
+      width: 100%;
+      height: 40px;
+    }
+  }
+
+  .mobileMenuLangList {
+    padding-top: 8px;
+  }
+
+  .mobileMenuBack {
+    font-size: 1rem;
+    font-weight: var(--bold-text);
+    svg {
+      transform: rotate(180deg);
+      margin-right: 8px;
+    }
+  }
+
+  .mobileMenuLangItem {
+    height: 50px !important;
+    margin-bottom: 0 !important;
+
+    svg {
+      height: 12px !important;
+      width: 17px !important;
+      display: none;
+    }
+
+    &.active svg {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    display: flex;
+  }
+}
+
+.profileInner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.mobileMenuAuth {
+  display: none;
+  justify-content: flex-start;
+
+  .mobileMenuDivider {
+    margin: 20px 0;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    height: 100px;
+
+    &:active {
+      background-color: #eee;
+    }
+
+    .chevron {
+      position: relative;
+      top: 2px;
+      right: 4px;
+      transition: 0.1s ease;
+
+      svg {
+        width: 8px;
+      }
+
+      &.rotate {
+        top: 0;
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .menuList {
+    // margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    & > button:active {
+      background-color: #eee;
+    }
+
+    &.marginBottom {
+      margin-bottom: 10px;
+    }
+  }
+
+  .menuLink {
+    font-size: 0.875rem;
+    line-height: 21px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    button {
+      width: 100%;
+      height: 100%;
+      text-align: left;
+      &:active {
+        background-color: #eee;
+      }
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .menuItem,
+    .menuLink {
+      font-size: 0.875rem;
+    }
+  }
+
+  @media screen and (max-width: 1080px) {
+    display: flex;
+    padding-bottom: 30px;
+    overflow: hidden;
+  }
+}
+
+.profileInfo {
+  .image {
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    margin-right: 12px;
+    border-radius: 40px;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .info {
+    font-size: 1rem;
+  }
+
+  .name {
+    margin-bottom: 5px;
+    font-weight: var(--bold-text);
+  }
+
+  .email {
+    font-size: 0.875rem;
+    opacity: 0.6;
+  }
+
+  @media screen and (max-width: 375px) {
+    .info {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  font-size: 0.875rem;
+  margin-left: -8px;
+  width: 100%;
+  text-align: left;
+
+  &:active {
+    background-color: #eee;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+  }
+
+  .svgWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+  }
+
+  svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    &.heart {
+      position: relative;
+      top: 1px;
+      left: 2.2px;
+    }
+
+    &.trash {
+      position: relative;
+      left: 2px;
+    }
+  }
+
+  span {
+    position: relative;
+    top: 1px;
+  }
+}
+
+.drawerSplit {
+  width: 100%;
+  height: 1px;
+  background-color: #eee;
+  margin-top: 15px;
+}
+
+.drawer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 33px;
+  padding-bottom: 20px;
+
+  .menuList {
+    margin-top: 16px;
+  }
+
+  .menuItem {
+    margin-left: 0px;
+  }
+}

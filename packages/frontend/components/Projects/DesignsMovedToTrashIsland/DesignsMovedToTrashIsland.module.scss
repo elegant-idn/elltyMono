@@ -1,0 +1,75 @@
+.islandContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  & > *:not(:nth-child(2)) {
+    width: 70px;
+
+    @media screen and (max-width: 1000px) {
+      width: 50px;
+    }
+  }
+}
+
+.islandTitle {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 130%;
+  text-align: center;
+}
+
+.islandSubtitle {
+  color: #999;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 130%;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.islandUndo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: 18px;
+    content: "";
+    height: 40px;
+    width: 1px;
+    background-color: #373737;
+  }
+
+  button {
+    margin-right: -8px;
+    color: #5289f8;
+    font-weight: 500;
+
+    &:hover {
+      color: #3274f6;
+    }
+
+    &:active {
+      color: #2469f6;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .islandTitle {
+    font-size: 12px;
+  }
+
+  .islandSubtitle {
+    font-size: 12px;
+  }
+
+  .islandUndo {
+    font-size: 12px;
+  }
+}

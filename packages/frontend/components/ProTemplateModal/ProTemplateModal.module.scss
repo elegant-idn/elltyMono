@@ -1,0 +1,220 @@
+.root {
+  position: relative;
+  display: flex;
+  width: 720px;
+
+  .closeBtn {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url("/close1.svg");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    z-index: 9999;
+    transition: 0.2s ease;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  > div {
+    width: 50%;
+  }
+
+  .banner {
+    // flex: 1 1;
+    position: relative;
+    display: flex;
+    // display: block;
+    // justify-content: center;
+    // align-items: center;
+    // overflow: hidden;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 24px;
+
+    min-height: 450px;
+
+    span {
+      // padding: 10px !important;
+    }
+
+    img {
+      position: relative;
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+      border: 1px solid #f6f6f6;
+      margin: 0 auto;
+      // display: none;
+      object-fit: contain;
+      width: 100%;
+      // max-height: 450px;
+      // padding: 15px !important;
+      border-radius: 10px;
+    }
+
+    // background-image: url("https://ellty-images.s3.amazonaws.com/template_images/e6s5zN4n7SkinCareTipsStiriesAds-middle.png");
+    // background-size: contain;
+    // background-position: center center;
+    // background-repeat: no-repeat;
+  }
+
+  .content {
+    padding: 65px 30px 67px 30px;
+
+    // BtnPrimary
+    button {
+      width: 100%;
+      font-size: 0.875rem;
+      outline: none !important;
+    }
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.25rem;
+    font-weight: var(--bold-text);
+    margin-bottom: 18px;
+  }
+
+  .subtitle {
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+  }
+
+  .advs {
+    margin-bottom: 22px;
+
+    .adv {
+      display: flex;
+      align-items: center;
+      font-size: 0.875rem;
+      line-height: 1.3;
+      margin-bottom: 10px;
+
+      &:last-child {
+        // margin-bottom: 20px;
+      }
+
+      .svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+      }
+
+      svg {
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+        // height: 100%;
+      }
+
+      .giftSvg {
+        position: relative;
+        right: 1px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    transform: translate(0, 0);
+    border-radius: 0;
+
+    .closeBtn {
+      top: 20px;
+      right: 20px;
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      background-image: url("/close2.svg");
+    }
+
+    .banner {
+      display: none;
+    }
+
+    > div {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .content {
+      padding-top: 150px;
+    }
+
+    .advs {
+      .adv {
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .advs {
+      margin-top: 0;
+
+      .adv {
+        font-size: 1rem;
+        margin-bottom: 8px;
+
+        &:last-child {
+          // margin-bottom: 24px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .advs {
+      .adv {
+        font-size: 0.875rem;
+
+        &:last-child {
+          // margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
+
+.proTemplate {
+  .emojiImg {
+    width: 60px;
+    // margin-bottom: 11px;
+  }
+}
+
+.tryElltyPro {
+  .content {
+    padding-top: 31px;
+  }
+
+  .subtitle {
+    margin-bottom: 24px;
+  }
+
+  .advs {
+    margin-bottom: 34px;
+  }
+}

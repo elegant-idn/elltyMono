@@ -1,0 +1,291 @@
+{
+  "Comment_1": "Africa",
+
+  "DZ, AO, BJ, BW, BF, BI, CM, CV, CF, TD, KM, CG, CD, CI, DJ, EG, GQ, ER, ET, GA, GM, GH, GN, GW, KE, LS, LR, LY, MG, MW, ML, MR, MU, MA, MZ, NA, NE, NG, RW, ST, SN, SC, SL, SO, ZA, SS, SD, TZ, TG, TN, UG, ZM, ZW": {
+    "monthly": "price_1NIR1vLnTf4V6Br3VMwjVehh",
+    "annual": "price_1NIR44LnTf4V6Br3juLJRvXk"
+  },
+
+
+
+  "Comment_2": "Americas: Currency - USD",
+
+  "BS, BB, BZ, CR, DO, EC, SV, GU, HT, HN, JM, NI, PA, SR, TT, VE": {
+    "monthly": "price_1NIR1vLnTf4V6Br3VMwjVehh",
+    "annual": "price_1NIR44LnTf4V6Br3juLJRvXk"
+  },
+
+
+
+  "Comment_2.1": "Americas: Currency - XCD",
+
+  "AG, DM, GD, KN, LC, VC": {
+    "monthly": "price_1NIQhTLnTf4V6Br3R44qyeLI",
+    "annual": "price_1NIQmdLnTf4V6Br3kK8uF9mW"
+  },
+
+
+
+  "Comment_2.2": "Americas: Other Currencies",
+
+  "AR": { 
+    "monthly": "price_1NHhezLnTf4V6Br3ngK73AY7",
+    "annual": "price_1NHhfsLnTf4V6Br3JVHljsuo" 
+  },
+  "BO": { 
+    "monthly": "price_1NI1tXLnTf4V6Br3MpN4fjOe",
+    "annual": "price_1NI1u2LnTf4V6Br3FP7cuZrv" 
+  },
+  "BR": {
+    "monthly": "price_1NFRRhLnTf4V6Br3mBh3vLVp",
+    "annual": "price_1NFRSJLnTf4V6Br3i7cxPwfN"
+  },
+  "CA": { 
+    "monthly": "price_1NHhOCLnTf4V6Br33uqtls0i",
+    "annual": "price_1NHhPVLnTf4V6Br3lvTromNZ" 
+  },
+  "CL": { 
+    "monthly": "price_1NHxmYLnTf4V6Br3hGMoz2k0",
+    "annual": "price_1NHxnyLnTf4V6Br3GgzZL0lj" 
+  },
+  "CO": { 
+    "monthly": "price_1NHhKzLnTf4V6Br3ydsEk8IK",
+    "annual": "price_1NHhM0LnTf4V6Br3un6QlsGT" 
+  },
+  "GT": { 
+    "monthly": "price_1NI1ntLnTf4V6Br3KG9nO0eq",
+    "annual": "price_1NI1oRLnTf4V6Br33oQK8s8N" 
+  },
+  "MX": { 
+    "monthly": "price_1NHzcQLnTf4V6Br3IB8Q9EkX",
+    "annual": "price_1NHzdDLnTf4V6Br38713SWk7" 
+  },
+  "PY": { 
+    "monthly": "price_1NI1w2LnTf4V6Br3WFSXJXy6",
+    "annual": "price_1NI1wWLnTf4V6Br3C28etidT" 
+  },
+  "PE": { 
+    "monthly": "price_1NI13iLnTf4V6Br37gt2sIfc",
+    "annual": "price_1NI14NLnTf4V6Br3OF0wAKr9" 
+  },
+  "UY": {
+    "monthly": "price_1NIkJQLnTf4V6Br3Pq6aXuYZ",
+    "annual": "price_1NIkLKLnTf4V6Br3Qn4dG2TW"
+  },
+
+
+
+  "Comment_3": "Asia Pacific: Currency - USD",
+
+  "BT, BN, KH, TL, FM, FJ, PF, GU, KI, LA, MH, MN, MM, NP, NC, MP, PW, PG, WS, SB, LK, TO, VU, WF": {
+    "monthly": "price_1NIR1vLnTf4V6Br3VMwjVehh",
+    "annual": "price_1NIR44LnTf4V6Br3juLJRvXk"
+  },
+
+
+
+  "Comment_3.1": "Asia Pacific: Other Currencies",
+
+  "AU, NR, TV": {
+    "monthly": "price_1NEhIjLnTf4V6Br3xlR9QjHT",
+    "annual": "price_1NEhJuLnTf4V6Br3BP8A31AF"
+  },
+  "BD": {
+    "monthly": "price_1NIm7FLnTf4V6Br3zIeTaLG8",
+    "annual": "price_1NIm7nLnTf4V6Br3hVAef3LW"
+  },
+  "CN": { 
+    "monthly": "price_1NI0tJLnTf4V6Br34CQR8Kv0",
+    "annual": "price_1NI0tyLnTf4V6Br3nodVPuqI" 
+  },
+  "HK, MO": { 
+    "monthly": "price_1NI3TPLnTf4V6Br3qFBDc4Bi",
+    "annual": "price_1NI3TvLnTf4V6Br3YxCV0em3"
+  },
+  "IN": {
+    "monthly": "price_1NFRUMLnTf4V6Br3Xc0GQeAV",
+    "annual": "price_1NFRUwLnTf4V6Br3vdu9bYsR"
+  },
+  "ID": {
+    "monthly": "price_1NHcVrLnTf4V6Br3cF3m3Ay5",
+    "annual": "price_1NHcWYLnTf4V6Br3TwMeYb2Q"
+  },
+  "JP": {
+    "monthly": "price_1NInCtLnTf4V6Br30R1j5xj1",
+    "annual": "price_1NInDOLnTf4V6Br35RYpHuKJ"
+  },
+  "MY": { 
+    "monthly": "price_1NI0iGLnTf4V6Br3CInCNHIa",
+    "annual": "price_1NI0j2LnTf4V6Br36zAz9frO" 
+  },
+  "NZ, NU, CK": { 
+    "monthly": "price_1NI4GRLnTf4V6Br3UHhSrtZi",
+    "annual": "price_1NI4H4LnTf4V6Br3D2f96i67" 
+  },
+  "PK": { 
+    "monthly": "price_1NI1SgLnTf4V6Br3meAS8UwD",
+    "annual": "price_1NI1TDLnTf4V6Br3KMZB7khi" 
+  },
+  "PH": {
+    "monthly": "price_1NFU3zLnTf4V6Br3EdUeimmq",
+    "annual": "price_1NFU5uLnTf4V6Br34QlyvDT1"
+  },
+  "SG": { 
+    "monthly": "price_1NI1X6LnTf4V6Br35KXk1je0",
+    "annual": "price_1NI1XZLnTf4V6Br3Gd0Y1nLO" 
+  },
+  "KR": { 
+    "monthly": "price_1NI0q4LnTf4V6Br30cse7aLn",
+    "annual": "price_1NI0qdLnTf4V6Br3NxSd9rp0" 
+  },
+  "TW": {
+    "monthly": "price_1NImexLnTf4V6Br3GIkeob2s",
+    "annual": "price_1NImfZLnTf4V6Br3WrqEjoxU"
+  },
+  "TH": { 
+    "monthly": "price_1NHhzuLnTf4V6Br3zUjNM1ns",
+    "annual": "price_1NHi16LnTf4V6Br3WVaTthbM" 
+  },
+  "VN": { 
+    "monthly": "price_1NI0etLnTf4V6Br3kB2urtSs",
+    "annual": "price_1NI0fcLnTf4V6Br3WS2eUGGo" 
+  },
+
+
+
+  "Comment_3.2": "Asia & others",
+
+  "AM": { 
+    "monthly": "price_1NHxfBLnTf4V6Br3O8b4MOCh",
+    "annual": "price_1NHxg0LnTf4V6Br3HjswYLx2" 
+  },
+  "AZ": { 
+    "monthly": "price_1NHxaOLnTf4V6Br348kxEkYp",
+    "annual": "price_1NHxbaLnTf4V6Br3VTJLo2Q3" 
+  },
+  "GE": { 
+    "monthly": "price_1NI0YVLnTf4V6Br3OkM3WODR",
+    "annual": "price_1NI0Z9LnTf4V6Br3spm0ujgD" 
+  },
+  "KZ": {
+    "monthly": "price_1NFROBLnTf4V6Br3MpxgOgK2",
+    "annual": "price_1NitFLLnTf4V6Br3y5Q6t7as"
+  },
+  "KG": {
+    "monthly": "price_1NHcYxLnTf4V6Br388WeSfEF",
+    "annual": "price_1NHcb0LnTf4V6Br3itb6oah2"
+  },
+  "TJ": { 
+    "monthly": "price_1NHcfKLnTf4V6Br3OGZamH1C",
+    "annual": "price_1NHch1LnTf4V6Br3yRuPZzgI" 
+  },
+  "UZ": {
+    "monthly": "price_1NHbOfLnTf4V6Br3WsqMNue8",
+    "annual": "price_1NHbPoLnTf4V6Br3Qjjxy4rX"
+  },
+
+
+
+  "Comment_4": "Europe: Currency - EUR",
+
+  "AD, AT, BE, BA, HR, CY, EE, FI, FR, DE, GR, VA, IE, IT, LV, LT, LU, MT, MC, ME, NL, PT, SM, SK, SI, ES": {
+    "monthly": "price_1NHfTILnTf4V6Br3T9bp0FS4",
+    "annual": "price_1NHfUALnTf4V6Br3CYo3ihsi"
+  },
+
+
+
+  "Comment_4.1": "Europe: Other currencies",
+
+  "AL": {
+    "monthly": "price_1NIOrmLnTf4V6Br38DoNmC0V",
+    "annual": "price_1NIOxBLnTf4V6Br3Ay7DEeH8"
+  },
+  "BY": {
+    "monthly": "price_1NFRPyLnTf4V6Br3KWcoPwoP",
+    "annual": "price_1NitNrLnTf4V6Br3lKLxCZUc"
+  },
+  "BG": { 
+    "monthly": "price_1NHxWGLnTf4V6Br37tl7QukM",
+    "annual": "price_1NHxXPLnTf4V6Br3Da4mAtJb" 
+  },
+  "CZ": { 
+    "monthly": "price_1NHxrnLnTf4V6Br3uPVIY9Tb",
+    "annual": "price_1NHxsQLnTf4V6Br3zAUyv7rU" 
+  },
+  "DK, FO": { 
+    "monthly": "price_1NI3M0LnTf4V6Br3mDMq2FBc",
+    "annual": "price_1NI3NbLnTf4V6Br3qYEGDyGj" 
+  },
+  "HU": { 
+    "monthly": "price_1NI3d2LnTf4V6Br3OzGrFg1c",
+    "annual": "price_1NI3f5LnTf4V6Br3botQJGK1" 
+  },
+  "IS": { 
+    "monthly": "price_1NIP5eLnTf4V6Br3VfwKi97I",
+    "annual": "price_1NIP6GLnTf4V6Br3zwWdU3C3" 
+  },
+  "IM, GB, JE": {
+    "monthly": "price_1NFRJGLnTf4V6Br36W1uHrDZ",
+    "annual": "price_1NFRLeLnTf4V6Br3hdxqFKVB"
+  },
+  "LI, CH": { 
+    "monthly": "price_1NIPEnLnTf4V6Br3vS7VDJ4t",
+    "annual": "price_1NIPFULnTf4V6Br3rZ0JIPHl" 
+  },
+  "MD": { 
+    "monthly": "price_1NHziXLnTf4V6Br3aLvyKM5M",
+    "annual": "price_1NHzjMLnTf4V6Br3j4G0zqO3" 
+  },
+  "NO": { 
+    "monthly": "price_1NI4QnLnTf4V6Br3d1YsCq6t",
+    "annual": "price_1NI4RMLnTf4V6Br3Ooma348z" 
+  },
+  "PL": {
+    "monthly": "price_1NFUbfLnTf4V6Br3km092mE1",
+    "annual": "price_1NFUcnLnTf4V6Br38AqD3JFz"
+  },
+  "RO": { 
+    "monthly": "price_1NI1JMLnTf4V6Br3KAMEhu8d",
+    "annual": "price_1NI1JuLnTf4V6Br3c3spgkUo" 
+  },
+  "RS": { 
+    "monthly": "price_1NI0m4LnTf4V6Br3KDQsNs6Y",
+    "annual": "price_1NI0mfLnTf4V6Br33teTm54n" 
+  },
+  "SE": { 
+    "monthly": "price_1NIPf3LnTf4V6Br3STWIAEXG",
+    "annual": "price_1NIPfdLnTf4V6Br38fDGklHi" 
+  },
+  "UA": {
+    "monthly": "price_1NFRMgLnTf4V6Br3cwL2qWLO",
+    "annual": "price_1NitKFLnTf4V6Br3KO7BlOGF"
+  },
+
+
+
+  "Comment_5": "Middle East",
+
+  "IL": { 
+    "monthly": "price_1NI1MxLnTf4V6Br3SV4Yav5U",
+    "annual": "price_1NI1NNLnTf4V6Br3duFpG9d5" 
+  },
+  "QA": { 
+    "monthly": "price_1NIoN9LnTf4V6Br3o2UCIdGd",
+    "annual": "price_1NIoO1LnTf4V6Br3eOIt8lLd" 
+  },
+  "SA": { 
+    "monthly": "price_1NIoP1LnTf4V6Br39cGYscvq",
+    "annual": "price_1NIoPlLnTf4V6Br3YEK27qyI" 
+  },
+  "TR": { 
+    "monthly": "price_1NHznWLnTf4V6Br3jVeDknAp",
+    "annual": "price_1NHzoALnTf4V6Br3PV5mBZZH" 
+  },
+  "AE": { 
+    "monthly": "price_1NHhsULnTf4V6Br3607mfj31",
+    "annual": "price_1NHhtDLnTf4V6Br3ideymoCb" 
+  }
+}
+
+

@@ -1,0 +1,666 @@
+// CARD MODAL
+.modalCard {
+  max-width: 1184px;
+  margin: 0 50px;
+  transform: translate(calc(-50% - 50px), -50%);
+
+  .closeBtn {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url("/close1.svg");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    z-index: 9999;
+    transition: 0.2s ease;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .leftArrow,
+  .rightArrow {
+    position: absolute;
+    top: calc(50% - 15px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    background-image: url("/slider-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center right calc(50% - 1px);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .leftArrow:hover,
+  .rightArrow:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .leftArrow {
+    right: -40px;
+  }
+
+  .rightArrow {
+    left: -40px;
+    transform: rotate(180deg);
+  }
+
+  .containerFluid {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 95vh;
+
+    &::-webkit-scrollbar {
+      display: none; /*chrome*/
+    }
+
+    > div {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      position: relative;
+      // overflow-y: auto;
+      height: 100%;
+    }
+
+    > div::-webkit-scrollbar {
+      display: none; /*chrome*/
+    }
+
+    @media screen and (max-width: 690px) {
+      height: 100%;
+      max-height: 100vh;
+
+      > div {
+        padding: 0 20px 90px 20px;
+        // padding-top: 0;
+      }
+    }
+
+    @media screen and (max-width: 375px) {
+      > div {
+        padding: 0 16px 60px 16px;
+      }
+    }
+  }
+
+  .header {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+
+    > a {
+      line-height: 0 !important;
+    }
+    .logo {
+      width: 75px;
+      height: 32px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .closeBtn {
+      position: relative;
+      right: 0;
+      background-image: url("/close2.svg");
+    }
+  }
+
+  .content {
+    display: flex;
+    margin-bottom: 30px;
+    // for copy link tooltip
+    // overflow-y: visible;
+
+    .modalImg {
+      position: relative;
+      overflow: hidden;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      flex: 1;
+      margin-right: 30px;
+      height: 454px;
+
+      .skeleton {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        border-radius: 6px;
+        background-color: #f6f6f6;
+      }
+
+      img {
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+        transform: translate(-50%, 50%);
+        border: 1px solid #f6f6f6;
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        // max-width: 500px;
+        // height: 454px;
+        border-radius: 4px;
+        margin: 0 auto;
+      }
+
+      @media screen and (max-width: 1280px) {
+        height: 422px;
+      }
+      @media screen and (max-width: 1024px) {
+        height: 358px;
+      }
+      @media screen and (max-width: 768px) {
+        height: 229px;
+      }
+      @media screen and (max-width: 480px) {
+        flex: initial;
+        height: 300px;
+      }
+      @media screen and (max-width: 375px) {
+        height: 254px;
+      }
+      @media screen and (max-width: 480px) {
+        margin: 0 0 24px 0;
+      }
+
+      .proBadge {
+        position: absolute;
+        bottom: 10px;
+        left: 9px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 0.75rem;
+        width: 40px;
+        height: 26px;
+        border-radius: 26px;
+        background-color: var(--lightgray-color);
+        cursor: pointer;
+      }
+    }
+
+    .modalText {
+      width: 37%;
+
+      @media screen and (max-width: 1024px) {
+        width: 42%;
+      }
+      @media screen and (max-width: 768px) {
+        width: 46%;
+      }
+      @media screen and (max-width: 480px) {
+        width: 100%;
+      }
+    }
+
+    .modalTextTitle {
+      font-weight: var(--bold-text);
+      font-size: 1.5rem;
+      line-height: 29px;
+      margin-bottom: 15px;
+
+      .proBadge {
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+
+        width: 20px;
+        height: 20px;
+        background: linear-gradient(
+            0deg,
+            rgba(38, 38, 38, 0.5),
+            rgba(38, 38, 38, 0.5)
+          ),
+          linear-gradient(
+            0deg,
+            rgba(153, 153, 153, 0.6),
+            rgba(153, 153, 153, 0.6)
+          );
+
+        border-radius: 50%;
+        border: 0.5px solid #99999999;
+
+        svg {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      @media screen and (max-width: 375px) {
+        font-size: 1rem;
+        line-height: 20px;
+      }
+    }
+
+    .modalTags {
+      display: flex;
+      overflow-x: auto;
+      scrollbar-width: none; /* mozilla */
+      margin-bottom: 20px;
+
+      &::-webkit-scrollbar {
+        display: none; /*chrome*/
+      }
+
+      @media screen and (max-width: 480px) {
+        margin-bottom: 16px;
+      }
+
+      .modalTag {
+        flex-shrink: 0;
+        font-size: 0.75rem;
+        padding: 8px 20px;
+        border: 1px solid #e1e5ed;
+        border-radius: 4px;
+
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+          padding: 8px 12.5px;
+        }
+
+        @media screen and (max-width: 480px) {
+          font-size: 0.875rem;
+          padding: 7px 24.5px;
+        }
+
+        @media screen and (max-width: 375px) {
+          font-size: 0.75rem;
+          padding: 8px 16px;
+        }
+      }
+
+      // .plan {
+      //   color: #fff;
+      //   background-color: var(--gold-color);
+      // }
+    }
+
+    .modalAdvs {
+      margin-bottom: 30px;
+
+      .modalAdvTitle {
+        font-size: 0.75rem;
+        font-weight: var(--bold-text);
+        margin-bottom: 10px;
+      }
+
+      .modalAdv {
+        display: flex;
+        align-items: center;
+        font-size: 0.75rem;
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+
+        svg {
+          flex-shrink: 0;
+          stroke: var(--gray-color);
+          width: 18px;
+          height: 18px;
+          margin-right: 8px;
+        }
+
+        svg.brushSvg {
+          fill: var(--gray-color);
+          stroke: none;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        margin-bottom: 24px;
+
+        .modalAdvTitle {
+          font-size: 1rem;
+        }
+
+        .modalAdv {
+          font-size: 0.875rem;
+        }
+      }
+
+      @media screen and (max-width: 375px) {
+        .modalAdvTitle {
+          font-size: 0.75rem;
+          margin-bottom: 8px;
+        }
+
+        .modalAdv {
+          font-size: 0.75rem;
+
+          &:not(:last-child) {
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+
+    .modalBtns {
+      display: flex;
+      font-size: 0.875rem;
+      margin-bottom: 30px;
+
+      .modalBtnPrimary {
+        max-width: 210px;
+        flex: 1;
+        margin-right: 10px;
+
+        button {
+          width: 100%;
+          // font-size: 0.875rem;
+        }
+      }
+
+      .modalBtnLike {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: var(--lightgray-color);
+        cursor: pointer;
+
+        svg {
+          fill: none;
+          stroke: var(--black-color);
+          width: 18px;
+          height: 18px;
+        }
+
+        &.like svg {
+          fill: #f05454;
+          stroke: #f05454;
+        }
+
+        &:hover svg {
+          fill: #f05454;
+          stroke: #f05454;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        margin-bottom: 24px;
+
+        .modalBtnPrimary {
+          max-width: 100%;
+
+          > button {
+            font-size: 1rem;
+            height: 48px;
+          }
+        }
+
+        .modalBtnLike {
+          height: 48px;
+          width: 48px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        margin-bottom: 24px;
+        .modalBtnPrimary {
+          > button {
+            font-size: 0.875rem;
+            height: 48px;
+          }
+        }
+      }
+    }
+
+    .modalShare {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 4px 0;
+
+      span {
+        font-size: 0.875rem;
+        margin-right: 14px;
+      }
+
+      svg {
+        box-sizing: content-box;
+        flex-shrink: 0;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        padding: 5px;
+      }
+
+      svg.fb,
+      svg.twitter,
+      svg.pinterest {
+        fill: var(--black-color);
+      }
+
+      svg.chain {
+        stroke: var(--black-color);
+      }
+
+      svg.fb:hover {
+        fill: #3b5998;
+      }
+      svg.twitter:hover {
+        fill: #00acee;
+      }
+      svg.pinterest:hover {
+        fill: #bd081c;
+      }
+      svg.chain:hover {
+        stroke: var(--blue-color);
+      }
+
+      svg:not(:last-child) {
+        margin-right: 8px;
+      }
+
+      .chainTooltip {
+        display: none;
+      }
+
+      @media screen and (max-width: 480px) {
+        span {
+          font-size: 1rem;
+        }
+      }
+
+      @media screen and (max-width: 375px) {
+        span {
+          font-size: 0.875rem;
+          margin-right: 12px;
+        }
+      }
+    }
+
+    .chainTooltip {
+      position: absolute;
+      top: calc(100%);
+      display: none;
+      align-items: flex-start;
+      padding: 20px;
+      font-size: 0.75rem;
+      width: 347px;
+      /* height: 95px; */
+      border: 1px solid #e1e5ed;
+      box-shadow: 2px 4px 12px rgba(161, 165, 176, 0.08);
+      border-radius: 4px;
+      z-index: 1000;
+      background-color: #fff;
+
+      &.active {
+        display: flex;
+      }
+
+      & .imgDone {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+
+      .chainTooltipTitle {
+        font-weight: var(--bold-text);
+        margin-bottom: 5px;
+      }
+
+      .chainTooltipClose {
+        position: relative;
+        left: 3px;
+        bottom: 3px;
+        flex-shrink: 0;
+        width: 15px;
+        height: 15px;
+        background-image: url("/close2.svg");
+        background-size: cover;
+        cursor: pointer;
+        padding: 3px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+  }
+
+  .cardSlider {
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 480px) {
+      width: calc(100% + 20px);
+    }
+
+    @media screen and (max-width: 375px) {
+      width: calc(100% + 16px);
+    }
+
+    .swiperSlide {
+      width: auto;
+      height: 32px;
+      background: #f6f6f6;
+      border-radius: 36px;
+      padding: 0 20px;
+      font-size: 0.875rem;
+      line-height: 32px;
+      cursor: pointer;
+    }
+
+    .swiperSlide:hover {
+      color: var(--blue-color);
+    }
+
+    .prevSlide,
+    .nextSlide {
+      top: calc(50% - 16px);
+    }
+
+    @media screen and (max-width: 1440px) {
+      .swiperSlide {
+        font-size: 0.75rem;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .swiperSlide {
+        font-size: 0.875rem;
+      }
+    }
+
+    @media screen and (max-width: 375px) {
+      .swiperSlide {
+        font-size: 0.75rem;
+      }
+    }
+  }
+
+  .modalGridTitle {
+    font-weight: var(--bold-text);
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 480px) {
+      margin-bottom: 24px;
+    }
+
+    @media screen and (max-width: 375px) {
+      font-size: 0.875rem;
+    }
+  }
+
+  .cardGrid {
+    position: relative;
+  }
+
+  // modalOpen adaptive
+  @media screen and (max-width: 1280px) {
+    max-width: 80%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    max-width: calc(100% - 110px);
+  }
+
+  @media screen and (max-width: 768px) {
+    // max-width: 587px;
+  }
+
+  // on 690px, the modal window should occupy the entire
+  // screen area, besides, the search bar on mobile devices
+  // should not interfere, so fixed is used instead of
+  // position absolute
+  @media screen and (max-width: 690px) {
+    transform: translate(0, 0);
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+
+    .header {
+      display: flex;
+    }
+
+    .leftArrow,
+    .rightArrow {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+  }
+
+  @media screen and (max-width: 375px) {
+  }
+}

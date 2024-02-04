@@ -1,0 +1,53 @@
+.section {
+  h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .items {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #e3e3e3;
+
+    @media screen and (max-width: 1100px) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  .item {
+    display: flex;
+
+    .iconContainer {
+      background-color: #f6f6f6;
+      min-width: 60px;
+      height: 60px;
+      margin-right: 1.25rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 6px;
+    }
+
+    .textContainer {
+      max-width: 284px;
+
+      @media screen and (max-width: 1100px) {
+        max-width: unset;
+      }
+
+      h4 {
+        font-size: 20px;
+      }
+
+      p {
+        margin-top: 0.625rem;
+        color: var(--extra-text);
+      }
+    }
+  }
+}

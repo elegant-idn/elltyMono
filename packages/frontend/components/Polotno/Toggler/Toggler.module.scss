@@ -1,0 +1,40 @@
+.root {
+  width: 42px;
+  height: 24px;
+  border: 1px solid #cdcdcd;
+  border-radius: 18px;
+  padding: 4px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  &:hover {
+    .svg {
+      rect {
+        fill: #cdcdcd;
+      }
+    }
+  }
+
+  .svg {
+    transition: margin-left 0.4s ease;
+  }
+  .activeCircle {
+    margin-left: 18px;
+    transition: margin-left 0.4s ease;
+  }
+  @media (max-width: 768px) {
+    position: relative;
+  }
+}
+
+.active {
+  background: #2372db;
+  border: none;
+  &:hover {
+    .activeCircle {
+      rect {
+        fill: #eee;
+      }
+    }
+  }
+}

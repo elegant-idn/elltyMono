@@ -1,0 +1,265 @@
+.contactContainer {
+  width: 1380px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1440px) {
+    width: 1140px;
+  }
+
+  @media screen and (max-width: 1280px) {
+    width: 1010px;
+  }
+
+  @media screen and (max-width: 1080px) {
+    width: 100%;
+    padding: 0 32px;
+  }
+
+  @media screen and (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 0 20px;
+  }
+
+  @media screen and (max-width: 375px) {
+    padding: 0 16px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 176px;
+  margin: 65px 0 76px 0;
+
+  @media screen and (max-width: 1440px) {
+    gap: 136px;
+  }
+
+  @media screen and (max-width: 1280px) {
+    gap: 49px;
+  }
+
+  @media screen and (max-width: 880px) {
+    gap: 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 60px;
+    margin: 51px 0 60px 0;
+  }
+
+  @media screen and (max-width: 480px) {
+    gap: 48px;
+    margin: 32px 0 46px 0;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  gap: 30px;
+
+  .title {
+    font-weight: 600;
+    font-size: 1.875rem;
+    margin-bottom: 10px;
+    line-height: 36px;
+  }
+
+  .text {
+    color: var(--gray-color);
+    line-height: 20px;
+    font-weight: normal;
+    font-size: 1rem;
+  }
+
+  .subtitle {
+    font-size: 1.125rem;
+    font-weight: var(--bold-text);
+    margin-bottom: 11px;
+  }
+
+  .address {
+    margin-bottom: 30px;
+
+    .addressItem {
+      display: flex;
+      align-items: center;
+
+      svg {
+        flex-shrink: 0;
+        margin-right: 10px;
+      }
+    }
+
+    .addressItem:not(:last-child) {
+      margin-bottom: 13px;
+    }
+
+    .linkMailto {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .socials {
+    display: flex;
+    gap: 14px;
+    margin-top: -5px;
+    margin-left: -5px;
+    margin-bottom: -5px;
+
+    .socialItem {
+      padding: 5px;
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      box-sizing: content-box;
+
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      svg.inst,
+      svg.fb,
+      svg.twitter,
+      svg.pinterest {
+        fill: var(--black-color);
+      }
+
+      svg.inst:hover {
+        fill: #c13584;
+      }
+      svg.fb:hover {
+        fill: #3b5998;
+      }
+      svg.twitter:hover {
+        fill: #00acee;
+      }
+      svg.pinterest:hover {
+        fill: #bd081c;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1440px) {
+    .text {
+      font-size: 0.875rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      margin-bottom: 13px;
+    }
+
+    .addressItem {
+      font-size: 0.875rem;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    gap: 20px;
+
+    .address {
+      margin-bottom: 42px;
+    }
+
+    .subtitle {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    @media screen and (min-width: 540px) {
+      flex-direction: row;
+      gap: 10%;
+      > div {
+        width: 280px;
+      }
+
+      > div:first-child {
+        padding-left: 40px;
+        flex-shrink: 0;
+      }
+
+      > div:last-child {
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 660px) {
+    @media screen and (min-width: 540px) {
+      gap: 5%;
+      > div:first-child {
+        padding-left: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    gap: 24px;
+
+    .text {
+      font-size: 1rem;
+    }
+
+    .subtitle {
+      font-size: 1.125rem;
+    }
+
+    .address {
+      margin-bottom: 24px;
+    }
+
+    .addressItem {
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .text {
+      font-size: 0.875rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+    }
+
+    .addressItem {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+.accordionsWrapper {
+  width: 680px;
+
+  @media screen and (max-width: 1440px) {
+    width: 562px;
+  }
+
+  @media screen and (max-width: 1280px) {
+    width: 515px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 470px;
+  }
+
+  @media screen and (max-width: 860px) {
+    width: 420px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}

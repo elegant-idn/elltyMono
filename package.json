@@ -1,0 +1,37 @@
+{
+  "name": "ellty",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "prettier": "prettier --write \"packages/frontend/**/*.{ts,tsx,css,scss,json}\"",
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettier"
+    }
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/multer": "^1.4.7",
+    "prettier": "^2.7.1"
+  },
+  "dependencies": {
+    "@nestjs/serve-static": "^2.2.2",
+    "@nestjs/swagger": "^5.2.0",
+    "apple-signin-auth": "^1.5.1",
+    "axios": "^0.26.1",
+    "env-cmd": "^10.1.0",
+    "https-proxy-agent": "^5.0.0",
+    "husky": "^8.0.1",
+    "mailchimp-api-v3": "^1.15.0",
+    "mv": "^2.1.1",
+    "nestjs-stripe": "^1.0.0",
+    "passport-apple": "^2.0.1",
+    "passport-facebook": "^3.0.0",
+    "paypal-rest-sdk": "^1.8.1",
+    "query-string": "^7.1.1",
+    "swagger-ui-express": "^4.3.0",
+    "webpack": "^5.69.1"
+  }
+}

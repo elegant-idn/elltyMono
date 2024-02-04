@@ -1,0 +1,58 @@
+.root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // background-color: black;
+  // overflow: hidden !important;
+  min-height: 100vh;
+
+  .contentWrapper {
+    flex: 1;
+    padding-top: 15px;
+
+    // containerFluid
+    > div {
+      height: 100%;
+    }
+
+    @media screen and (max-width: 800px) {
+      .sidePanelWrapper {
+        display: none;
+      }
+
+      &.settingsPage {
+        .sidePanelWrapper {
+          display: block;
+
+          > div {
+            top: 0;
+            position: relative;
+            width: 100%;
+          }
+        }
+
+        .content {
+          padding-top: 0;
+          // display: none;
+        }
+      }
+    }
+  }
+
+  .sidePanelWrapper {
+  }
+
+  .content {
+    padding-top: 74px;
+    padding-left: 245px;
+    // overflow: hidden;
+  }
+
+  @media screen and (max-width: 800px) {
+    .content {
+      padding-top: var(--header-height);
+      padding-bottom: var(--bottom-panel-height);
+      padding-left: 0;
+    }
+  }
+}

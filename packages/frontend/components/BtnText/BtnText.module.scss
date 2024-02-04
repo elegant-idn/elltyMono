@@ -1,0 +1,20 @@
+.root {
+  height: 40px;
+  width: 90px;
+  transition: 0.05s ease;
+  outline: none;
+
+  &:hover {
+    // font-weight: var(--bold-text);
+    opacity: 0.6;
+    transition: 0.05s ease;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+  }
+
+  &.disabled:hover {
+    font-weight: normal;
+  }
+}

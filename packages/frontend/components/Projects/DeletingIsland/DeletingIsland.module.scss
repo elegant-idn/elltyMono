@@ -1,0 +1,28 @@
+.backdrop {
+  z-index: 10000;
+}
+
+.content {
+  margin-left: 30px;
+  width: 100%;
+
+  .title {
+    font-size: 14px;
+    font-weight: 500;
+
+    @media screen and (max-width: 1000px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.loader {
+  margin-top: 0.5rem;
+  width: 100%;
+
+  .progress {
+    background: rgba(238, 238, 238, 0.6) !important;
+    height: 7px;
+    box-shadow: inset 0px 0px 0px 0.5px rgba(240, 240, 240, 0.6);
+  }
+}

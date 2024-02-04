@@ -1,0 +1,55 @@
+.root {
+  width: 360px;
+  padding: 32px 30px;
+  margin: 0 50px;
+  transform: translate(calc(-50% - 50px), -50%);
+
+  .closeBtn {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url("/close1.svg");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    z-index: 9999;
+    transition: 0.2s ease;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    transform: translate(0, 0);
+    border-radius: 0;
+    margin: 0;
+
+    .closeBtn {
+      top: 27px;
+      right: 27px;
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      background-image: url("/close2.svg");
+    }
+
+    > div {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.root {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: var(--bold-text);
+  cursor: pointer;
+
+  svg {
+    position: relative;
+    bottom: 1px;
+    flex-shrink: 0;
+    width: 11px;
+  }
+}

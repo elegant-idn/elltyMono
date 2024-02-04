@@ -1,0 +1,35 @@
+.root {
+  .btnWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    padding-left: 15px;
+    white-space: nowrap;
+    .crown {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  .btnSecondary {
+    button {
+      width: 100%;
+      font-size: 1rem;
+      // font-weight: var(--bold-text);
+      padding-left: 10px;
+    }
+  }
+
+  @media screen and (max-width: 1440px) {
+    .btnSecondary button {
+      font-size: 0.875rem;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .btnSecondary button {
+      height: 48px;
+    }
+  }
+}

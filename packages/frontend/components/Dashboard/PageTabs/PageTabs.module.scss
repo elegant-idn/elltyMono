@@ -1,0 +1,63 @@
+.rowControls {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+}
+
+.tabs {
+  padding-bottom: 5px;
+  overflow-x: auto;
+  display: flex;
+  &::-webkit-scrollbar {
+    height: 0;
+    display: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 0;
+  }
+
+  .swiperSlide {
+    width: fit-content;
+  }
+  margin-bottom: -1px;
+}
+
+.tab {
+  padding: 10px 12px;
+  border-radius: 4px;
+  flex-shrink: 0;
+
+  @media screen and (max-width: 1440px) {
+    font-size: 0.875rem;
+  }
+
+  &:not(:nth-child(1)) {
+    margin-left: 10px;
+  }
+
+  &:not(.selected) {
+    &:hover {
+      background-color: #f6f6f6;
+    }
+
+    &:active {
+      background-color: #eeeeee;
+    }
+  }
+
+  &.selected {
+    font-weight: var(--bold-text);
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: -5px;
+      background: var(--black-color);
+      height: 2px;
+      width: 100%;
+      border-radius: 4px 4px 0px 0px;
+    }
+  }
+}

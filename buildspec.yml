@@ -1,0 +1,40 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+    - aws ecr get-login-password | docker login --username AWS --password-stdin https://$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com
+    - IMAGE_BACKEND=$REPO_BACKEND:latest
+    - IMAGE_FRONTEND=$REPO_FRONTEND:latest
+    - IMAGE_TASK_SCHEDULER=$REPO_TASK_SCHEDULER:latest
+    - IMAGE_NGINX=$REPO_NGINX:latest
+    - IMAGE_TAG=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
+  build:
+    commands:
+      - docker pull $IMAGE_BACKEND || true
+      - docker pull $IMAGE_FRONTEND || true
+      - docker pull $IMAGE_TASK_SCHEDULER || true
+      - docker pull $IMAGE_NGINX || true
+      # create atlas cert
+      - echo "${X509_CERT}" >> X509-cert.pem
+      - cp X509-cert.pem packages/back/
+      - cp X509-cert.pem packages/task-scheduler/
+      - docker build --cache-from $REPO_BACKEND:latest --tag $REPO_BACKEND:latest --tag $REPO_BACKEND:$IMAGE_TAG --build-arg APP_ENV=$APP_ENV -f Dockerfile packages/back
+      - docker build --cache-from $REPO_FRONTEND:latest --tag $REPO_FRONTEND:latest --tag $REPO_FRONTEND:$IMAGE_TAG --build-arg APP_ENV=$APP_ENV -f Dockerfile packages/frontend
+      - docker build --cache-from $REPO_TASK_SCHEDULER:latest --tag $REPO_TASK_SCHEDULER:latest --tag $REPO_TASK_SCHEDULER:$IMAGE_TAG --build-arg APP_ENV=$APP_ENV -f Dockerfile packages/task-scheduler
+      - docker build  --cache-from $REPO_NGINX:latest --tag $REPO_NGINX:latest --tag $REPO_NGINX:$IMAGE_TAG containers/nginx
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Pushing the Docker images...
+      - docker push --all-tags $REPO_BACKEND
+      - docker push --all-tags $REPO_FRONTEND
+      - docker push --all-tags $REPO_TASK_SCHEDULER
+      - docker push --all-tags $REPO_NGINX
+      - printf '[{"name":"backend","imageUri":"%s"}, {"name":"frontend","imageUri":"%s"},{"name":"nginx","imageUri":"%s"}]' $IMAGE_BACKEND $IMAGE_FRONTEND $IMAGE_NGINX   > imagedefinitions.json
+      - printf '[{"name":"task_scheduler","imageUri":"%s"}]' $IMAGE_TASK_SCHEDULER   > scheduler-imagedefinitions.json
+
+artifacts:
+  files:
+    - imagedefinitions.json
+    - scheduler-imagedefinitions.json

@@ -1,0 +1,54 @@
+.deleteRoot {
+  background-color: #fff;
+  width: 321px;
+  padding: 1.375rem;
+
+  .deleteTitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+  }
+
+  .deleteBody {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+
+    margin-top: 14px;
+  }
+
+  .deleteActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .deleteBtn {
+    width: 100%;
+    margin-left: 0.35rem;
+    &:not(:disabled) {
+      background-color: #e22222;
+      color: #fff;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+
+    .deleteActions {
+      flex-direction: column;
+      margin-top: 20px;
+
+      & > button {
+        margin: 0;
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+
+    .deleteTitle {
+      font-size: 16px;
+    }
+  }
+}

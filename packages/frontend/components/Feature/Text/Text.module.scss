@@ -1,0 +1,32 @@
+.section {
+  .item {
+    max-width: 900px;
+    margin: auto;
+
+    @media screen and (max-width: 1100px) {
+      text-align: center;
+    }
+
+    h4 {
+      font-size: 30px;
+    }
+
+    p {
+      margin-top: 1.2rem;
+      font-size: 16px;
+      line-height: 130%;
+
+      @media screen and (max-width: 1440px) {
+        font-size: 14px;
+      }
+
+      @media screen and (max-width: 1100px) {
+        font-size: 16px;
+      }
+    }
+
+    &:not(:nth-child(1)) {
+      margin-top: 1.8rem;
+    }
+  }
+}

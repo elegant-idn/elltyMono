@@ -1,0 +1,50 @@
+.root {
+  font-size: 0.875rem;
+  display: flex;
+  .photo {
+    flex: 1;
+    background-color: var(--beige-color);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .photoWrappper {
+      width: 488px;
+      height: 336px;
+      margin: 20px;
+    }
+  }
+  .restoration {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .wrapper {
+      display: flex;
+      margin: 20px;
+      flex-direction: column;
+      width: 45vh;
+      gap: 25px;
+      > button {
+        width: 100%;
+      }
+    }
+  }
+  label {
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: 800px) {
+    display: block;
+    .photo {
+      height: 50vh;
+    }
+    .restoration {
+      height: 50vh;
+      .wrapper {
+        width: 80%;
+      }
+    }
+  }
+}

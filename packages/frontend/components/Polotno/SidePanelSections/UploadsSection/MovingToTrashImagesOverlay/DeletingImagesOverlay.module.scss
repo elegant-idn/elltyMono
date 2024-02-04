@@ -1,0 +1,71 @@
+.root {
+  align-items: start !important;
+  z-index: 100;
+  --image-offset: 0.43rem;
+
+  .images {
+    margin-right: 1.875rem;
+    position: relative;
+    display: flex;
+
+    & > .imageContainer {
+      border: 0.5px solid #f6f6f6;
+      border-radius: 4px;
+
+      width: 40px;
+      height: 40px;
+      position: relative;
+
+      overflow: hidden;
+
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 3;
+
+      &:nth-child(4) {
+        left: var(--image-offset);
+        z-index: 2;
+      }
+
+      &:nth-child(6) {
+        left: calc(var(--image-offset) * 2);
+        z-index: 1;
+      }
+
+      img {
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+
+    .spacingImage {
+      width: 40px;
+    }
+
+    .spacingImage:not(:nth-child(1)) {
+      width: var(--image-offset);
+    }
+  }
+
+  .info {
+    width: 100%;
+
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      margin-top: 0.2rem;
+    }
+
+    .loader {
+      margin-top: 0.5rem;
+      width: 100%;
+
+      .progress {
+        background: rgba(238, 238, 238, 0.6) !important;
+        height: 7px;
+        box-shadow: inset 0px 0px 0px 0.5px rgba(240, 240, 240, 0.6);
+      }
+    }
+  }
+}

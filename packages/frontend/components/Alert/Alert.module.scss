@@ -1,0 +1,15 @@
+.root {
+  display: flex;
+  align-items: center;
+  color: #6bb143;
+  margin-bottom: 20px;
+
+  svg {
+    position: relative;
+    bottom: 1px;
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+  }
+}

@@ -1,0 +1,257 @@
+// STRIPE SECTION
+.stripeCTA {
+  .content {
+    background-color: var(--beige-color);
+    text-align: center;
+    padding: 77px 0;
+    margin-bottom: 40px;
+    border-radius: 4px;
+  }
+
+  .title {
+    position: relative;
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    z-index: 10 !important;
+  }
+
+  .titleOval {
+    position: relative;
+  }
+
+  .title img {
+    display: block;
+    position: absolute;
+    width: 133px;
+    top: -6px;
+    left: -4px;
+    z-index: -1;
+  }
+
+  .title br {
+    display: none;
+  }
+
+  .subtitle {
+    color: var(--gray-color);
+    margin-bottom: 30px;
+  }
+
+  .btnPrimary {
+    button {
+      width: auto;
+      padding: 0 29px;
+      margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+    .title br {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .title br {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .content {
+      padding: 64px 0;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+    }
+
+    .btnPrimary > button {
+      width: 343px;
+    }
+  }
+
+  @media screen and (max-width: 395px) {
+    background-color: var(--beige-color);
+    padding: 0 16px;
+    // containerFluid
+    > div {
+      padding: 0;
+    }
+    .content {
+      padding: 48px 0;
+      margin-bottom: 0px;
+    }
+
+    .title {
+      font-size: 1.5rem;
+    }
+
+    .subtitle {
+      font-size: 0.875rem;
+    }
+
+    .btnPrimary > button {
+      width: 100%;
+    }
+
+    .title img {
+      width: 108px;
+      top: -5px;
+    }
+  }
+}
+
+// HERO SECTION
+.stripeTemplates {
+  margin-bottom: 40px;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--banner-color);
+    border-radius: 4px;
+    // padding: 15px 238px;
+    padding: 76px 238px;
+  }
+
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 800px;
+    // margin-right: 300px;
+  }
+
+  .title {
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    line-height: 20px;
+    font-weight: normal;
+    color: var(--gray-color);
+  }
+
+  .imgInstagramPost img {
+    width: 387px;
+  }
+
+  @media screen and (max-width: 1850px) {
+    .text {
+      // margin-right: 200px;
+    }
+  }
+
+  @media screen and (max-width: 1580px) {
+    .text {
+      // margin-right: 110px;
+    }
+  }
+
+  @media screen and (max-width: 1440px) {
+    .content {
+      // padding: 15px 115px;
+      padding: 76px 115px;
+    }
+
+    .subtitle {
+      font-size: 0.875rem;
+      line-height: 18px;
+    }
+
+    .imgInstagramPost img {
+      width: 342px;
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    .content {
+      // padding: 15px 103px;
+      padding: 65px 103px;
+    }
+
+    .text {
+      margin-right: 52px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .content {
+      padding: 20px 103px;
+    }
+
+    .text {
+      margin-right: 23px;
+    }
+
+    .imgInstagramPost img {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 30px;
+
+    .content {
+      padding: 38px 40px;
+    }
+
+    .text {
+      margin-right: 37px;
+    }
+
+    .imgInstagramPost {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+    .imgInstagramPost img {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 24px;
+
+    .content {
+      display: inline-block;
+      padding: 30px 20px;
+    }
+
+    .text {
+      margin-right: 0;
+    }
+
+    .title {
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      line-height: 20px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .content {
+      padding: 40px 16px;
+    }
+
+    .title {
+      font-size: 1.5rem;
+    }
+
+    .subtitle {
+      font-size: 0.875rem;
+      line-height: 18px;
+    }
+  }
+}

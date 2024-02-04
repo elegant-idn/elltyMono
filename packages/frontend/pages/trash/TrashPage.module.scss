@@ -1,0 +1,224 @@
+.rowControls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #eee;
+}
+
+.root {
+  .blockTitle {
+    font-weight: var(--bold-text);
+    font-size: 1.5rem;
+    line-height: 29px;
+  }
+
+  .empty {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 150px;
+  }
+
+  .badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    width: 104px;
+    height: 30px;
+    border-radius: 30px;
+    background: #f6f6f6;
+    margin-top: 20px;
+  }
+  .hoverEffect {
+    transition: 0.2s ease;
+    border-radius: 4px;
+    &:hover {
+      background-color: var(--hover-color);
+    }
+  }
+  .popperWrapper {
+    transition: 0.2s ease;
+    background-color: var(--full-white);
+    font-size: 14px;
+    width: 278px;
+    // height: 100px;
+    border-radius: 4px;
+    border: 1px solid var(--clicked-color);
+    .titleWrapperPopper {
+      border-bottom: 1px solid var(--line-stroke);
+      padding: 7.5px 22px;
+    }
+    .trashWrapper {
+      display: flex;
+      gap: 10px;
+      padding: 7px 16px;
+      align-items: center;
+      transition: 0.2s ease;
+      &:hover {
+        background-color: var(--hover-color);
+      }
+    }
+  }
+  .listHeader {
+    display: flex;
+
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line-stroke);
+    padding-right: 20px;
+    p {
+      margin-left: var(--xl_3);
+      flex: 1;
+    }
+  }
+
+  .listElement {
+    padding: var(--base) 0px var(--base) var(--xl_3);
+    border-bottom: 1px solid var(--line-stroke);
+    display: flex;
+    align-items: center;
+    p {
+      width: 200px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    span {
+      margin-left: var(--base);
+      flex: 1;
+      font-size: var(--xs);
+    }
+
+    .nameHolder {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: var(--base);
+      font-weight: var(--bold-text);
+      font-size: var(--sm);
+    }
+  }
+  .gridWrapper {
+    margin-top: var(--xl_4);
+  }
+  .selectedItems {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: var(--base);
+    margin-bottom: var(--base_2);
+  }
+  .blockTitle {
+    font-weight: var(--bold-text);
+    font-size: 1.5rem;
+    line-height: 29px;
+  }
+
+  .empty {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 150px;
+  }
+
+  .badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    width: 104px;
+    height: 30px;
+    border-radius: 30px;
+    background: #f6f6f6;
+    margin-top: 20px;
+  }
+  .DesignGridElement {
+    // padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    height: 225px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+
+    transition: 0.2s ease;
+    .imgWrapper {
+      transition: 0.2s ease;
+      position: relative;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(54, 55, 60, 0.07);
+      border: 1px solid rgba(35, 114, 219, 0);
+      padding: 10px 10px 0 10px;
+      border-radius: 4px;
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-origin: content-box;
+      &:hover {
+        border: 1px solid rgba(35, 114, 219, 1);
+        // background-color: var(--hover-elements);
+      }
+      .selectWrap {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        // border:2px solid red;
+        .popperInfo {
+          border: 2px solid red;
+        }
+      }
+
+      .btnMoreWrap {
+        display: none;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    }
+
+    .text {
+      padding: 10px;
+      text-overflow: ellipsis;
+      span {
+        color: var(--extra-text);
+        font-size: var(--xs);
+      }
+      .title {
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-weight: var(--bold-text);
+        font-size: 0.875rem;
+        line-height: 17px;
+        margin-bottom: 3px;
+        transition: 0.2s;
+      }
+
+      .titleWrap {
+        display: inline;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: text;
+      }
+
+      .category {
+        font-size: 0.75rem;
+        line-height: 1.3;
+        opacity: 0.6;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

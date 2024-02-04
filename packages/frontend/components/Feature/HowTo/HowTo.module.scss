@@ -1,0 +1,91 @@
+.section {
+  padding: 3rem;
+  background-color: #f6f6f6;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+
+  h2 {
+    font-size: 30px;
+  }
+  @media screen and (max-width: 1100px) {
+    text-align: center;
+    padding: 0;
+  }
+
+  .items {
+    max-width: 50%;
+    width: 100%;
+    margin-top: 1.85rem;
+
+    @media screen and (max-width: 1100px) {
+      max-width: unset;
+    }
+
+    .item {
+      max-width: 570px;
+      h4 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 130%;
+        margin-top: 1rem;
+
+        @media screen and (max-width: 1440px) {
+          font-size: 14px;
+        }
+
+        @media screen and (max-width: 1100px) {
+          font-size: 16px;
+        }
+      }
+
+      &:not(:nth-child(1)) {
+        margin-top: 1.2rem;
+      }
+
+      @media screen and (max-width: 1100px) {
+        max-width: unset;
+      }
+    }
+  }
+
+  .imgContainer {
+    width: 740px;
+    position: absolute;
+    top: 50%;
+    right: -90px;
+    transform: translateY(-50%);
+
+    @media screen and (max-width: 1330px) {
+      width: 640px;
+      right: -80px;
+    }
+
+    @media screen and (max-width: 1180px) {
+      width: 540px;
+      right: -65px;
+    }
+
+    @media screen and (max-width: 1100px) {
+      width: 100%;
+      position: relative;
+      top: unset;
+      right: unset;
+      transform: none;
+
+      margin-top: 2rem;
+    }
+  }
+
+  .btn {
+    margin-top: 1.85rem;
+
+    @media screen and (max-width: 1100px) {
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+}

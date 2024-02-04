@@ -1,0 +1,97 @@
+.content {
+  .block {
+  }
+
+  .date {
+    display: flex;
+
+    .dateTitle {
+      font-weight: var(--bold-text);
+      margin-right: 10px;
+    }
+
+    .dateText {
+      color: var(--gray-color);
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 30px;
+    font-weight: var(--bold-text);
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    color: var(--gray-color);
+    margin-bottom: 15px;
+    line-height: 21px;
+  }
+
+  ul {
+    padding-left: 25px;
+    list-style: none;
+    margin: 22px 0;
+  }
+
+  ul li {
+    font-size: 1rem;
+    line-height: 20px;
+    position: relative;
+    // margin-bottom: 5px;
+  }
+
+  ul li::before {
+    /* UTF-8 escape sequence */
+    content: "\2022";
+    position: absolute;
+    top: 2px;
+    left: -15px;
+    color: var(--black-text);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1rem;
+  }
+
+  .linkText {
+    margin-bottom: 40px;
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: 1440px) {
+    p {
+      font-size: 0.875rem;
+      line-height: 19px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+  }
+
+  @media screen and (max-width: 480px) {
+    p {
+      font-size: 1rem;
+      line-height: 21px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    h3 {
+      font-size: 1rem;
+      line-height: 20px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 0.875rem;
+      line-height: 19px;
+      margin-bottom: 10px;
+    }
+  }
+}

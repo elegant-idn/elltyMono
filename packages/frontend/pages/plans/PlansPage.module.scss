@@ -1,0 +1,174 @@
+.wrapper {
+  margin: 65px 0 98px 0;
+  // text-align: center;
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 43px;
+    margin-bottom: 15px;
+  }
+
+  .text {
+    font-size: 1rem;
+    line-height: 21px;
+    text-align: center;
+    color: var(--gray-color);
+    margin-bottom: 40px;
+    white-space: pre-line;
+    font-weight: normal;
+  }
+
+  .subtitle {
+    font-size: 1.875rem;
+    margin-bottom: 40px;
+    font-weight: var(--bold-text);
+  }
+
+  .tabs {
+    margin-bottom: 100px;
+
+    .tabsList {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      scrollbar-width: none; /*mozilla*/
+
+      &::-webkit-scrollbar {
+        display: none; /*chrome*/
+      }
+    }
+
+    .badgeTab {
+      position: relative;
+      // overflow: visible;
+
+      .badge {
+        position: absolute;
+        right: 97px;
+        bottom: 13px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        white-space: nowrap;
+        transform: rotate(-10deg);
+        // this is so that the hover on the badge does not work for the tab
+        z-index: -10;
+        font-size: 0.75rem;
+
+        svg {
+          width: 22px;
+          position: relative;
+          left: 13px;
+          transform: rotate(5deg);
+        }
+
+        @media screen and (max-width: 1440px) {
+          right: 94px;
+          font-size: 0.625rem;
+        }
+        @media screen and (max-width: 480px) {
+          right: 87px;
+          bottom: 17px;
+          font-size: 0.75rem;
+        }
+        @media screen and (max-width: 375px) {
+          right: 83px;
+          bottom: 16px;
+          font-size: 0.625rem;
+        }
+      }
+    }
+
+    .tabPanel {
+      display: flex;
+      gap: 30px;
+    }
+  }
+
+  .accordionsWrapper {
+    width: 958px;
+  }
+
+  @media screen and (max-width: 1440px) {
+    .accordionsWrapper {
+      width: 718px;
+    }
+
+    .text {
+      font-size: 0.875rem;
+      line-height: 18px;
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+  }
+
+  @media screen and (max-width: 1024px) {
+    .title {
+      font-size: 1.875rem;
+      line-height: 36px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    // wrapper
+    margin: 21px 0 98px 0;
+
+    .accordionsWrapper {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 690px) {
+    .tabPanel {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    // wrapper
+    margin: 16px 0 54px 0;
+
+    .title {
+      margin-bottom: 16px;
+    }
+
+    .tabs {
+      margin-bottom: 56px;
+    }
+
+    .text {
+      font-size: 1rem;
+      line-height: 21px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .title {
+      font-size: 1.5rem;
+      line-height: 30px;
+    }
+
+    .tabs {
+      margin-bottom: 54px;
+    }
+
+    .text {
+      font-size: 0.875rem;
+      line-height: 18px;
+    }
+  }
+}

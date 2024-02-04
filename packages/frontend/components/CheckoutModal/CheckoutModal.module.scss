@@ -1,0 +1,127 @@
+.root {
+  position: relative;
+  display: flex;
+  width: 720px;
+  // overflow: hidden;
+
+  .backSvg {
+    position: absolute;
+    top: 19px;
+    // width: 24px;
+    // height: 24px;
+    left: 20px;
+    box-sizing: content-box;
+
+    width: 22px;
+    height: 22px;
+    padding: 5px;
+    stroke: var(--black-color);
+    fill: none;
+    // transform: rotate(180deg);
+    cursor: pointer;
+  }
+
+  .closeBtn {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url("/close1.svg");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    z-index: 9999;
+    transition: 0.2s ease;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  > div {
+    width: 50%;
+  }
+
+  .banner {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+
+    // background-image: url('/plans/banner2.png');
+    // background-size: cover;
+    // background-position: center center;
+    // background-repeat: no-repeat;
+
+    padding: 30px 28px;
+    background: #f6f6f6;
+
+    .bannerTitle {
+      font-size: 1.25rem;
+      line-height: 24px;
+      font-weight: var(--bold-text);
+      margin-bottom: 25px;
+      white-space: pre-line;
+    }
+
+    .bannerSubtitle {
+      font-size: 0.875rem;
+      margin-bottom: 20px;
+    }
+
+    .benefitsList {
+      .benefitItem {
+        display: flex;
+        align-items: center;
+        font-size: 0.875rem;
+        color: var(--gray-color);
+
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+
+        svg {
+          flex-shrink: 0;
+          width: 16px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    transform: translate(0, 0);
+
+    .closeBtn {
+      top: 20px;
+      right: 20px;
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      background-image: url("/close2.svg");
+    }
+
+    .banner {
+      display: none;
+    }
+
+    > div {
+      width: 100%;
+    }
+  }
+}

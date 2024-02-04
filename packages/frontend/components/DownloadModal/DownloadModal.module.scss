@@ -1,0 +1,137 @@
+.root {
+  position: relative;
+  max-width: 720px;
+  width: 100%;
+
+  .closeBtn {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url("/close1.svg");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    z-index: 9999;
+    transition: 0.2s ease;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .banner {
+    position: relative;
+    width: 100%;
+    min-height: 318px;
+    overflow: hidden;
+    border-radius: 6px 6px 0 0;
+
+    & > span {
+      z-index: -1 !important;
+    }
+
+    .text {
+      padding: 28px 34px;
+      color: #fff;
+
+      .title {
+        font-size: 1.19rem;
+        font-weight: 500;
+        max-width: 58%;
+        margin: auto 0;
+        line-height: 1.5;
+      }
+
+      .advs {
+        font-size: 0.875rem;
+        margin-top: 1rem;
+        max-width: 55%;
+        .adv {
+          display: flex;
+          align-items: center;
+
+          &:not(:nth-child(1)) {
+            margin-top: 1rem;
+          }
+
+          & > svg {
+            margin-right: 1rem;
+            min-width: 14px;
+          }
+        }
+      }
+    }
+
+    &.gradient {
+      &::after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        inset: 0px;
+
+        background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.85) 2.63%,
+          rgba(0, 0, 0, 0.507106) 29.46%,
+          rgba(0, 0, 0, 0.300756) 50.02%,
+          rgba(217, 217, 217, 0) 79.98%
+        );
+      }
+    }
+  }
+
+  .content {
+    padding: 46px 36px;
+    font-size: 0.875rem;
+  }
+
+  @media (max-width: 500px) {
+    width: 90%;
+    .closeBtn {
+      display: none;
+    }
+
+    .content {
+      padding: 30px 24px;
+    }
+
+    .text.text {
+      .title {
+        max-width: 100%;
+      }
+      .advs {
+        max-width: 80%;
+      }
+      padding: 42px 26px;
+    }
+
+    .banner {
+      &.gradient {
+        &::after {
+          background: linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 0, 0, 0.5) 35.42%,
+            rgba(0, 0, 0, 0.3) 66.15%,
+            rgba(0, 0, 0, 0) 100%
+          );
+        }
+      }
+    }
+  }
+}
+
+.semiBold {
+  font-weight: 600;
+}
+
+.invisible {
+  display: none;
+}

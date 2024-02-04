@@ -1,0 +1,74 @@
+.root {
+  position: fixed;
+  bottom: 0;
+  display: none;
+  flex-shrink: 0;
+  align-items: flex-end;
+  padding: 2px 1px;
+  left: 0px;
+  right: 0px;
+  justify-content: space-evenly;
+  height: var(--bottom-panel-height);
+  // background-color: lightgray;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+  z-index: 10;
+
+  @media screen and (max-width: 800px) {
+    display: flex;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 33%;
+    height: 100%;
+    white-space: nowrap;
+    font-weight: 500;
+    color: #878787;
+
+    &.active {
+      color: var(--black-color);
+
+      svg {
+        fill: var(--black-color);
+      }
+
+      svg.homeSvg,
+      svg.designsSvg,
+      svg.templatesSvg {
+        & > path {
+          stroke: var(--black-color);
+        }
+      }
+    }
+
+    svg {
+      fill: #878787;
+    }
+
+    svg.templatesSvg {
+      fill: none;
+      stroke: #878787;
+      margin-bottom: 5px;
+    }
+
+    svg.homeSvg {
+      fill: none;
+      stroke: #878787;
+    }
+
+    svg.designsSvg {
+      fill: none;
+
+      stroke: #878787;
+    }
+
+    span {
+      font-size: 0.75rem;
+      line-height: 130%;
+    }
+  }
+}

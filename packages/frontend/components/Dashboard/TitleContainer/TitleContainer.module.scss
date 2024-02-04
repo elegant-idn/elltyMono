@@ -1,0 +1,51 @@
+.frozenContainer {
+  position: sticky;
+  overflow-x: hidden;
+  top: 69px;
+
+  width: 100%;
+  z-index: 10;
+
+  margin-top: -20px;
+  padding-top: 20px;
+
+  @media screen and (max-width: 800px) {
+    top: 59px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    inset: 0px;
+    left: -15px;
+    right: -15px;
+    bottom: 24px;
+
+    background: rgba(255, 255, 255, 0.93);
+    backdrop-filter: blur(17.5px);
+
+    z-index: -1;
+
+    @media screen and (max-width: 800px) {
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.8) 100%
+      );
+      backdrop-filter: blur(17.5px);
+    }
+  }
+}
+
+.blockTitle {
+  font-weight: 600;
+  line-height: 29px;
+  font-size: 26px;
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 1000px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

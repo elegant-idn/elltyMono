@@ -1,0 +1,168 @@
+{ 
+  "Comment_1": "Africa: All Excluded",
+
+  "DZ, AO, BJ, BW, BF, BI, CM, CV, CF, TD, KM, CG, CD, CI, DJ, EG, GQ, ER, ET, GA, GM, GH, GN, GW, KE, LS, LR, LY, MG, MW, ML, MR, MU, MA, MZ, NA, NE, NG, RW, ST, SN, SC, SL, SO, ZA, SS, SD, TZ, TG, TN, UG, ZM, ZW": {},
+
+
+
+  "Comment_2": "Americas: Currency - USD",
+
+  "BS, BB, BZ, CR, DO, EC, SV, GU, HT, HN, JM, NI, PA, SR, TT, VE": {
+    "monthly": "P-6EU43553AU839393DMSEBFOY",
+    "annual": "P-49Y20119YJ904530CMSEBGUQ"
+  },
+
+
+
+  "Comment_2.1": "Americas: Excluded",
+
+  "AG, DM, GD, KN, LC, VC, AR, BO, CL, CO, GT, PY, PE, UY": {},
+
+
+
+  "Comment_2.2": "Americas: Other Currencies",
+
+  "BR": {
+    "monthly": "P-1Y845657LL618431DMR6WK2A",
+    "annual": "P-7TL71738PM7163510MR6WLKQ"
+  },
+  "CA": {
+    "monthly": "P-7CR49567U8184263YMSCWJEI",
+    "annual": "P-1V428414V1454101XMSCWKBA"
+  },
+  "MX": {
+    "monthly": "P-2NT02234AU450864WMSDHMIY",
+    "annual": "P-37T61574R2931282DMSDHMZA"
+  },  
+
+
+
+  "Comment_3": "Asia Pacific: Currency - USD",
+
+  "BT, BN, KH, TL, FM, FJ, PF, GU, KI, LA, MH, MN, MM, NP, NC, MP, PW, PG, WS, SB, LK, TO, VU, WF": {
+    "monthly": "P-6EU43553AU839393DMSEBFOY",
+    "annual": "P-49Y20119YJ904530CMSEBGUQ"
+  },
+  
+  "Comment_3.1": "Asia Pacific: Excluded",
+
+  "BD, CN, IN, ID, MY, KR, VN, PK": {},
+
+
+  "Comment_3.2": "Asia Pacific: Other Currencies",
+  
+  "AU, NR, TV": {
+    "monthly": "P-6WV16931H2247394UMR6VTKI",
+    "annual": "P-1KH64925T0745930PMR6VUTI"
+  },
+  "HK, MO": { 
+    "monthly": "P-1H751256AB608662TMSDK56I",
+    "annual": "P-16J57017020053519MSDK6YQ" 
+  },
+  "JP": {
+    "monthly": "P-9G764576878195810MSEV2YY",
+    "annual": "P-25N77070RA109760TMSEV4BI"
+  },
+  "NZ, NU, CK": { 
+    "monthly": "P-16E590040N449304LMSDLYPI",
+    "annual": "P-6LE24962MU477674TMSDLZGY" 
+  },
+  "PH": {
+    "monthly": "P-3AK8843543881973GMR6WNAA",
+    "annual": "P-9KU6234340878303PMR6WNNQ"
+  },
+  "SG": {
+    "monthly": "P-2DS015488D6139512MSDJFPY",
+    "annual": "P-11D058323N559125WMSDJGBI"
+  },
+  "TW": {
+    "monthly": "P-00185094F9495794RMSEVOJI",
+    "annual": "P-0BW18846P7685873BMSEVPDY"
+  },
+  "TH": {
+    "monthly": "P-7PV39483V8150401CMSCW34Y",
+    "annual": "P-0AG19019L6181900EMSCW4YY"
+  },
+
+
+
+  "Comment_3.3": "Asia & others: Excluded",
+
+  "AM, AZ, GE, KZ, KG, TJ, UZ": {},
+
+
+  
+  "Comment_4": "Europe: Currency - EUR",
+    
+    "AD, AT, BE, BA, HR, CY, EE, FI, FR, DE, GR, VA, IE, IT, LV, LT, LU, MT, MC, ME, NL, PT, SM, SK, SI, ES": {
+      "monthly": "P-4X747122FF875482KMSCVFQY",
+      "annual": "P-3F4487877J9550053MSCVE3Y"
+    },
+
+
+
+    "Comment_4.1": "Europe: Excluded",
+
+    "AL, BY, BG, IS, MD, RO, RU, RS, UA": {},    
+
+
+
+    "Comment_4.2": "Europe: Other currencies",
+
+    "CZ": {
+      "monthly": "P-5AC58935EL095230UMSDFXYI",
+      "annual": "P-9WE75590DY983354HMSDFYIY"
+      },
+    "DK, FO": {
+      "monthly": "P-9DX44777XT6531146MSDK2KI",
+      "annual": "P-3U891777VK0418048MSDK25Y"
+      },
+    "HU": { 
+      "monthly": "P-1R114859TW632870RMSDLBLI",
+      "annual": "P-5WG44175R3165522EMSDLCLI" 
+        },
+    "IM, GB, JE": {
+      "monthly": "P-7GB64092X8493993YMR6VXHI",
+      "annual": "P-7L938038R5235632GMR6VYAA"
+    },
+    "LI, CH": { 
+      "monthly": "P-2G111300UY389023TMSD7PBA",
+      "annual": "P-84Y8677281982412YMSD7PYQ" 
+    },
+    "NO": { 
+      "monthly": "P-4B991237F4685271WMSDL23Y",
+      "annual": "P-2TE384676G1363131MSDL3NY" 
+    },
+    "PL": {
+      "monthly": "P-4NB02222WN4431338MR6WN5Y",
+      "annual": "P-1UC59180PX836460EMR6WOOQ"
+      },
+    "SE": { 
+      "monthly": "P-57K15864XK6058056MSD7T5Y",
+      "annual": "P-4H890882213177610MSD7ZBQ" 
+    },
+
+
+
+
+    "Comment_5": "Middle East",
+
+    "IL": {
+      "monthly": "P-9J995787G8555484BMSDJAVI",
+      "annual": "P-8X082182KY394960HMSDJBHQ"
+      },
+
+
+
+    "Comment_5.1": "Middle East: Excluded",
+
+    "JO, KW, OM, QA, SA, TR, AE": {}
+
+
+
+
+
+
+
+  }
+  

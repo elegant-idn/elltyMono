@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "dev",
+			"path": "packages/frontend",
+			"problemMatcher": [],
+			"label": "npm: dev - packages/frontend",
+			"detail": "next dev -p 3333"
+		}
+	]
+}

@@ -1,0 +1,63 @@
+/* UI LINK */
+.root {
+  font-size: 1rem;
+  font-weight: var(--bold-text);
+  color: var(--blue-color) !important;
+  transition: 0.3s ease;
+  cursor: pointer;
+
+  &:hover,
+  &:hover svg {
+    color: var(--darkblue-color) !important;
+  }
+
+  &.disabled {
+    color: var(--blue-color) !important;
+    cursor: default;
+    opacity: 0.5;
+  }
+
+  &.disabled:hover {
+    color: var(--blue-color) !important;
+  }
+
+  /* UI LINK WITH SVG CHEVRON */
+  & svg {
+    position: relative;
+    top: 1px;
+    width: 8px;
+    height: 12px;
+    margin-left: 6px;
+    stroke: var(--blue-color);
+    fill: none;
+    transition: 0.3s ease;
+  }
+
+  &:hover svg {
+    stroke: var(--darkblue-color);
+  }
+
+  @media screen and (max-width: 1440px) {
+    font-size: 0.875rem;
+
+    & svg {
+      top: 2px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1rem;
+
+    & svg {
+      top: 1px;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 0.875rem;
+
+    & svg {
+      top: 2px;
+    }
+  }
+}

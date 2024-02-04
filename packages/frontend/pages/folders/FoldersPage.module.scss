@@ -1,0 +1,68 @@
+.root {
+  height: 100%;
+  .blockTitle {
+    font-weight: var(--bold-text);
+    font-size: 1.5rem;
+    line-height: 29px;
+  }
+  .blockTitle {
+    font-weight: var(--bold-text);
+    font-size: 1.5rem;
+    line-height: 29px;
+  }
+
+  .empty {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 150px;
+  }
+
+  .badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    width: 104px;
+    height: 30px;
+    border-radius: 30px;
+    background: #f6f6f6;
+    margin-top: 20px;
+  }
+  .listHeader {
+    display: flex;
+    margin-top: var(--base_2);
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line-stroke);
+    padding-right: 20px;
+    p {
+      margin-left: var(--xl_3);
+      flex: 1;
+    }
+  }
+
+  .listElement {
+    padding: var(--base) 0px var(--base) var(--xl_3);
+    border-bottom: 1px solid var(--line-stroke);
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: var(--base);
+      flex: 1;
+      font-size: var(--xs);
+    }
+    .nameHolder {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: var(--base);
+      font-weight: var(--bold-text);
+      font-size: var(--sm);
+    }
+  }
+  .wrapper {
+    margin-top: var(--base_2);
+  }
+}

@@ -1,0 +1,32 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  // BtnPrimary
+  button {
+    outline: none !important;
+    margin-left: 1.2rem;
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    & > *:not(:nth-child(1)) {
+      margin-top: 28px;
+    }
+
+    button {
+      width: 100%;
+      margin-left: 0px;
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  & > *:not(:nth-child(1)) {
+    margin-left: 10px;
+  }
+}

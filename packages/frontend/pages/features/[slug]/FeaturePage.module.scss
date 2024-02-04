@@ -1,0 +1,31 @@
+.sectionContainer {
+  width: 100%;
+  max-width: 1340px;
+  padding: 4.75rem 20px;
+  margin: auto;
+
+  @media screen and (max-width: 1100px) {
+    max-width: 625px;
+    padding: 3rem 20px;
+  }
+}
+
+.howTo {
+  @media screen and (max-width: 1100px) {
+    background-color: #f6f6f6;
+  }
+}
+
+.CTA {
+  margin: auto;
+
+  @media screen and (max-width: 1100px) {
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+.CTASection {
+  padding-bottom: 4.75rem;
+  padding-top: 1rem;
+}

@@ -1,0 +1,16 @@
+.root {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: var(--hover-color);
+  // top: var(--xs_2);
+  right: var(--xs_2);
+  // z-index: 1;
+  fill: var(--extra-text);
+  transition: 0.2s;
+  &:hover {
+    background-color: var(--hover-elements);
+    fill: var(--full-white);
+  }
+}

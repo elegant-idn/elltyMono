@@ -1,0 +1,120 @@
+.resizeItem {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  user-select: none;
+  min-width: 130px;
+
+  .resizeLabel {
+    position: absolute;
+    left: 0px;
+  }
+
+  .inputNumber {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    margin-top: 23.65px;
+    overflow: hidden;
+
+    &:focus-within,
+    &.focus {
+      input {
+        border: 1.4px solid #4071e6;
+      }
+
+      svg {
+        stroke: #4071e6;
+      }
+
+      button,
+      div[role="button"] {
+        border: 1px solid #4071e6;
+        cursor: pointer;
+      }
+    }
+
+    svg {
+      stroke: #e1e5ed;
+    }
+
+    input {
+      height: 100%;
+      width: 100%;
+      outline: none;
+      border: 1.4px solid #e1e5ed;
+      border-radius: 4px;
+      padding-left: 10px;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin: 0;
+      }
+    }
+
+    button,
+    div[role="button"] {
+      position: absolute;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px !important;
+      height: 20px;
+      border: 1px solid #e1e5ed;
+      box-sizing: border-box;
+      outline: none;
+
+      svg {
+        position: relative;
+        width: 11px;
+      }
+
+      &.spinButtonPlus {
+        height: 21px;
+        top: 0;
+        border-top-right-radius: 4px;
+
+        svg {
+          bottom: 1px;
+        }
+      }
+
+      &.spinButtonMinus {
+        bottom: 0;
+        border-top: 0;
+        border-bottom-right-radius: 4px;
+
+        svg {
+          top: 1px;
+          transform: rotate(180deg);
+        }
+      }
+
+      @media screen and (max-width: 1000px) {
+        &.spinButtonPlus,
+        &.spinButtonMinus {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &:last-child {
+    margin-left: 24px;
+  }
+
+  @media (max-width: 768px) {
+    &:last-child {
+      margin-left: 10px;
+    }
+
+    .inputNumber {
+      margin-left: 0;
+    }
+  }
+}
